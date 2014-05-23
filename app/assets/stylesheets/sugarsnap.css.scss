@@ -1,4 +1,16 @@
-@media screen and (max-width: 541px) {
+@media screen and (max-width: 540px) {
+  body { background: lightgreen; }
+  header { background: green; padding-top: 10px; padding-bottom: 10px; margin-top: none; margin-bottom: none; display: block; }
+  img { height: 400px; width: 400px; text-align: center; }
+  h1 { display: inline-block; vertical-align: center; color: lightgreen; }
+  .header-logo { height: 50%; width: auto; display: inline-block; border: solid lightgreen; border-radius: 50px; }
+  .container { text-align: center; }
+  .feed-container { border: solid green; text-align: center; margin-left: auto; margin-right: auto; }
+  .form-container { border: solid green; text-align: center; margin-left: auto; margin-right: auto; }
+  .feed { text-align: center; margin-left: auto; margin-right: auto; }
+  .feed-pic { border: solid green; }
+}
+@media screen and (min-width: 541px) {
   body { background: lightgreen; }
   header { background: green; padding-top: 10px; padding-bottom: 10px; margin-top: none; margin-bottom: none; display: block; }
   img { height: 400px; width: 400px; text-align: center; }
