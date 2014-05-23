@@ -337,3 +337,1312 @@ Served asset /application.js - 304 Not Modified (3ms)
 
 Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 15:28:24 -0700
 Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 16:52:24 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled firebaseConnection.js  (0ms)  (pid 6214)
+Compiled firebaseController.js  (0ms)  (pid 6214)
+Compiled firebaseView.js  (0ms)  (pid 6214)
+Compiled geoFire.js  (0ms)  (pid 6214)
+Compiled initialize.js  (0ms)  (pid 6214)
+Compiled application.js  (58ms)  (pid 6214)
+Completed 200 OK in 77.9ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 16:52:24 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:24 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:24 -0700
+Served asset /firebaseCommunicator.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:24 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:24 -0700
+Served asset /firebaseController.js - 200 OK (1ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:24 -0700
+Served asset /firebaseConnection.js - 200 OK (2ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:24 -0700
+Served asset /firebaseView.js - 200 OK (1ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:24 -0700
+Served asset /geoFire.js - 200 OK (2ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:24 -0700
+Served asset /initialize.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:24 -0700
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 16:52:46 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Compiled initialize.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 23.0ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 16:52:47 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:47 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:47 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:47 -0700
+Served asset /firebaseCommunicator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:47 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:47 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:47 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:47 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:47 -0700
+Served asset /initialize.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 16:52:47 -0700
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 16:53:41 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled firebaseConnection.js  (0ms)  (pid 6214)
+Compiled firebaseController.js  (0ms)  (pid 6214)
+Compiled initialize.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 50.5ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 16:53:42 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 16:53:42 -0700
+Served asset /firebaseConnection.js - 200 OK (2ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 16:53:42 -0700
+Served asset /firebaseController.js - 200 OK (2ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 16:53:42 -0700
+Served asset /firebaseCommunicator.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 16:53:42 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 16:53:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 16:53:42 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 16:53:42 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 16:53:42 -0700
+Served asset /initialize.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 16:53:42 -0700
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 16:54:23 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseConnection.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 49.2ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 16:54:23 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 16:54:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 16:54:23 -0700
+Served asset /firebaseCommunicator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 16:54:23 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 16:54:23 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 16:54:23 -0700
+Served asset /firebaseConnection.js - 200 OK (2ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 16:54:23 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 16:54:23 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 16:54:23 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 16:54:23 -0700
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 16:55:01 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 40.4ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 16:55:01 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:01 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:01 -0700
+Served asset /firebaseCommunicator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:01 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:01 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:02 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:02 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:02 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:02 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:02 -0700
+Served asset /application.js - 200 OK (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 16:55:50 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseConnection.js  (0ms)  (pid 6214)
+Compiled firebaseController.js  (0ms)  (pid 6214)
+Compiled application.js  (4ms)  (pid 6214)
+Completed 200 OK in 50.5ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 16:55:50 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:50 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:50 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:50 -0700
+Served asset /firebaseCommunicator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:50 -0700
+Served asset /firebaseConnection.js - 200 OK (2ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:50 -0700
+Served asset /firebaseController.js - 200 OK (1ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:50 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:50 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 16:55:50 -0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 16:56:05 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled initialize.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 48.3ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 16:56:06 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:06 -0700
+Served asset /firebaseCommunicator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:06 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:06 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:06 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:06 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:06 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:06 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:06 -0700
+Served asset /initialize.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:06 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 16:56:47 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 22.5ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:47 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:47 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:47 -0700
+Served asset /firebaseCommunicator.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 16:56:47 -0700
+Served asset /application.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:47 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:47 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:47 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:47 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:47 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 16:56:47 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 16:57:48 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled application.js  (4ms)  (pid 6214)
+Completed 200 OK in 26.3ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 16:57:48 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 16:57:48 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 16:57:48 -0700
+Served asset /firebaseCommunicator.js - 200 OK (1ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 16:57:48 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 16:57:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 16:57:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 16:57:48 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 16:57:48 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 16:57:48 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 16:57:48 -0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 16:58:16 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled firebaseController.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 47.3ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:17 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:17 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 16:58:17 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:17 -0700
+Served asset /firebaseCommunicator.js - 200 OK (2ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:17 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:17 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:17 -0700
+Served asset /firebaseController.js - 200 OK (1ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:17 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:17 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:17 -0700
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 16:58:44 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled application.js  (4ms)  (pid 6214)
+Completed 200 OK in 49.6ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 16:58:44 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:44 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:44 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:44 -0700
+Served asset /firebaseCommunicator.js - 200 OK (3ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:44 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:44 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:44 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 16:58:44 -0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 16:59:35 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled application.js  (4ms)  (pid 6214)
+Completed 200 OK in 45.5ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 16:59:35 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:35 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:35 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:35 -0700
+Served asset /firebaseCommunicator.js - 200 OK (1ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:35 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:35 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:35 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:35 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:35 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:35 -0700
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 16:59:50 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 45.8ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 16:59:50 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:50 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:50 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:50 -0700
+Served asset /firebaseCommunicator.js - 200 OK (2ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:50 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:50 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:50 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:50 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 16:59:50 -0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 17:00:59 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 24.4ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 17:00:59 -0700
+Served asset /application.css - 304 Not Modified (32ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 17:00:59 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 17:00:59 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 17:00:59 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 17:00:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 17:00:59 -0700
+Served asset /firebaseCommunicator.js - 200 OK (2ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 17:00:59 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 17:00:59 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 17:00:59 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 17:00:59 -0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 17:01:21 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 23.7ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 17:01:21 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 17:01:21 -0700
+Served asset /firebaseCommunicator.js - 200 OK (2ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 17:01:21 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 17:01:21 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 17:01:22 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 17:01:22 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 17:01:22 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 17:01:22 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 17:01:22 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 17:01:22 -0700
+Served asset /application.js - 304 Not Modified (32ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 17:06:41 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 27.4ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 17:06:41 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 17:06:41 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 17:06:41 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 17:06:41 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 17:06:41 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 17:06:41 -0700
+Served asset /firebaseCommunicator.js - 200 OK (1ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 17:06:41 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 17:06:41 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 17:06:41 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 17:06:41 -0700
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 17:07:52 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseController.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 44.6ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 17:07:52 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 17:07:52 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 17:07:52 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 17:07:52 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 17:07:52 -0700
+Served asset /firebaseCommunicator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 17:07:52 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 17:07:52 -0700
+Served asset /firebaseController.js - 200 OK (1ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 17:07:52 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 17:07:52 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 17:07:52 -0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 17:10:49 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled firebaseController.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 48.1ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 17:10:49 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 17:10:49 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 17:10:49 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 17:10:49 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 17:10:49 -0700
+Served asset /firebaseCommunicator.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 17:10:49 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 17:10:49 -0700
+Served asset /firebaseController.js - 200 OK (1ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 17:10:49 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 17:10:49 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 17:10:49 -0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 17:11:23 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 45.2ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 17:11:23 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:23 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:23 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:23 -0700
+Served asset /firebaseCommunicator.js - 200 OK (7ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:23 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:23 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:23 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:23 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:23 -0700
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 17:11:36 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 44.8ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 17:11:36 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:36 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:36 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:36 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:36 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:36 -0700
+Served asset /firebaseCommunicator.js - 200 OK (2ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:36 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:36 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:36 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 17:11:36 -0700
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 17:12:21 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled application.js  (4ms)  (pid 6214)
+Completed 200 OK in 24.8ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:21 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:21 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 17:12:21 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:21 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:21 -0700
+Served asset /firebaseCommunicator.js - 200 OK (1ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:21 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:21 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:21 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:21 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:21 -0700
+Served asset /application.js - 304 Not Modified (39ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 17:12:48 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 23.1ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 17:12:49 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:49 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:49 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:49 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:49 -0700
+Served asset /firebaseCommunicator.js - 200 OK (4ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:49 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:49 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:49 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:49 -0700
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 17:12:49 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 17:15:21 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 45.9ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 17:15:22 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 17:15:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 17:15:22 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 17:15:22 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 17:15:22 -0700
+Served asset /firebaseCommunicator.js - 200 OK (2ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 17:15:22 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 17:15:22 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 17:15:22 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 17:15:22 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 17:15:22 -0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 17:30:53 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled firebaseController.js  (0ms)  (pid 6214)
+Compiled initialize.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 55.0ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 17:30:54 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 17:30:54 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 17:30:54 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 17:30:54 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 17:30:54 -0700
+Served asset /firebaseCommunicator.js - 200 OK (2ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 17:30:54 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 17:30:54 -0700
+Served asset /firebaseController.js - 200 OK (1ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 17:30:54 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 17:30:54 -0700
+Served asset /initialize.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 17:30:54 -0700
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 17:31:07 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled initialize.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 43.2ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 17:31:07 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 17:31:07 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 17:31:07 -0700
+Served asset /firebaseCommunicator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 17:31:07 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 17:31:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 17:31:07 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 17:31:07 -0700
+Served asset /firebaseController.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 17:31:07 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 17:31:07 -0700
+Served asset /initialize.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 17:31:07 -0700
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 17:32:07 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseController.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 24.7ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 17:32:07 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:07 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:07 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:07 -0700
+Served asset /firebaseCommunicator.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:07 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:07 -0700
+Served asset /firebaseController.js - 200 OK (29ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:07 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:07 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:07 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-22 17:32:51 -0700
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Compiled firebaseCommunicator.js  (0ms)  (pid 6214)
+Compiled firebaseController.js  (0ms)  (pid 6214)
+Compiled application.js  (3ms)  (pid 6214)
+Completed 200 OK in 25.1ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-22 17:32:51 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/geoFire.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:51 -0700
+Served asset /geoFire.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseCommunicator.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:51 -0700
+Served asset /firebaseCommunicator.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:51 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseConnection.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:51 -0700
+Served asset /firebaseConnection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/firebaseController.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:51 -0700
+Served asset /firebaseController.js - 200 OK (2ms)
+
+
+Started GET "/assets/firebaseView.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:51 -0700
+Served asset /firebaseView.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/initialize.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:51 -0700
+Served asset /initialize.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-22 17:32:51 -0700
+Served asset /application.js - 304 Not Modified (12ms)
