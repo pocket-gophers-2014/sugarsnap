@@ -25,11 +25,27 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'jasmine-jquery-rails'
 
 
 #Fix for heroku deprecating warning on-compile
 gem 'rails_12factor'
 
+group :development, :test do
+  gem 'rspec'
+  # gem 'rpsec-rails'
+  gem 'jasmine'
+  gem 'jasmine-rails'
+end
+
+group :test do
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'database_cleaner'
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
