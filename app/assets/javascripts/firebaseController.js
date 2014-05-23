@@ -7,7 +7,6 @@ function FirebaseController(view, geo, coordinates) {
 
 FirebaseController.prototype = {
   init: function(array) {
-    console.log(array)
     var photos = this.extractInitialPhotos(array)
     this.appendPhotosToFeed(photos)
   },
