@@ -1,9 +1,12 @@
 <%= @sugarsnap %>
-
-
 <div id='feed'></div>
 
-<div>
-  <input type='file' id='photo-snapper' accept='image/*' capture='camera'>
-</div>
-
+<form action='http://sugarsnapper.s3.amazonaws.com/' method='post' enctype='multipart/form-data'>
+<% @form.fields.map do |(name, value)| %>
+  <input type="hidden" name="<%= name %>" value="<%= value %>">
+<% end %>
+File to upload to S3:
+    <input type='file' name='file' id='photo-snapper' accept='image/*' capture='camera'>
+    <br>
+    <input type='submit' value='Submit this file'>
+</form>
