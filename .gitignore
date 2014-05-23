@@ -1,5 +1,5 @@
 .env
 tmp/*
 log/*
-config/heroku_env.rb
+
 
