@@ -1,4 +1,5 @@
 <%= @sugarsnap %>
+<div id='feed'></div>
 
 <form action='http://sugarsnapper.s3.amazonaws.com/' method='post' enctype='multipart/form-data'>
 <% @form.fields.map do |(name, value)| %>
@@ -9,78 +10,3 @@ File to upload to S3:
     <br>
     <input type='submit' value='Submit this file'>
 </form>
-
-
-
-
-<!-- <form action='http://sugarsnapper.s3.amazonaws.com/' method='post' enctype='multipart/form-data'>
-
-    <input type='hidden' name='key' value='images/${filename}'>
-    <input type='hidden' name='AWSAccessKeyId' value='ENV['AWSAccessKeyId']'>
-    <input type='hidden' name='acl' value='private'>
-    <input type='hidden' name='success_action_redirect' value='http://localhost:3000/'>
-    <input type='hidden' name='policy' value='ENV['AWSSecretKey']'>
-    <input type='hidden' name='Content-Type' value='image/jpeg'>
-    <input type='hidden' name='Content-Type' value='image/jpeg'>
-
-    File to upload to S3:
-    <input type='file' name='file' id='photo-snapper' accept='image/*' capture='camera'>
-    <br>
-    <input type='submit' value='Submit this file'>
-
-</form> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div>
-  <form action='http://sugarsnapper.s3.amazonaws.com/' method='post' enctype='multipart/form-data'>
-    <input type='file' id='photo-snapper' accept='image/*' capture='camera'>
-  </form>
-</div> -->
-
-<!-- <input type='file' id='photo-snapper' accept='image/*' capture='camera'>
-<button id='upload-button' style='display:none'>Upload to S3</button>
-<div id='results'></div>
-<script type="text/javascript">
-  var appId = ENV['AWSAccessKeyId'];
-  var roleArn = ENV['AWSSecretKey'];
-  var bucketName = 'sugarsnapper';
-  var bucket = new AWS.S3({params: {Bucket: bucketName}});
-
-  var photoSnapper =  document.getElementById('photo-snapper');
-  var button = document.getElementById('upload-button');
-  var results =  document.getElementById('results');
-  button.addEventListener('click', function() {
-    var file = photoSnapper.files[0];
-    if (file) {
-      results.innerHTML = '';
-
-      var params = { ContentType: file.type, Body: file, ACL: 'public-read' };
-      bucket.putObject(params, function(err, data) {
-        if(err) {
-          results.innerHTML = 'Error: ' + err;
-        } else {
-          var imageTag = '';
-          results.innerHTML += imageTag;
-        }
-      });
-    } else {
-      results.innerHTML = 'Nothing to upload.';
-    }
-  }, false);
-
-
-</script> -->
