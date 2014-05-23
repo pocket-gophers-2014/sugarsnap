@@ -2,10 +2,11 @@ language: ruby
 cache: bundler
 rvm:
   - 2.0.0
-
+env:
+  - DB=postgresql
 before_script:
   - cp config/database.travis.yml config/database.yml
-  - psql -c 'create database trala_test;' -U postgres
+  - psql -c 'create database photo_snap_test;' -U postgres
   - bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare --trace
 script:
