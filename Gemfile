@@ -9,6 +9,7 @@ gem 'rails', '3.2.18'
 
 gem 'pg'
 gem 'dotenv-rails', '~> 0.11.1'
+gem 'aws-sdk', '~> 1.0'
 
 
 # Gems used only for assets and not required
@@ -26,7 +27,7 @@ end
 gem 'jquery-rails'
 
 
-#"Fix for heroku deprecating warning on-compile
+#Fix for heroku deprecating warning on-compile
 gem 'rails_12factor'
 
 group :development, :test do
