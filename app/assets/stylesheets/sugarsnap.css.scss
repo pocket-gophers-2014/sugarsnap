@@ -1,0 +1,73 @@
+header {
+  background: green;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: none;
+  margin-bottom: none;
+  display: block;
+  clear: both;
+  text-align: center;
+  border: solid lightgreen;
+  border-radius: 0 0 10px 10px;
+  .header-logo {
+    height: 10%;
+    width: auto;
+    display: inline-block;
+    border: solid lightgreen;
+    border-radius: 50px;
+  }
+  ul {
+    list-style: none;
+    width: auto;
+    vertical-align: center;
+  }
+  ul li {
+    list-style: none;
+    display: inline;
+    line-height: 40px;
+    width: auto;
+    color: lightgreen;
+    vertical-align: center;
+  }
+  ul li img {
+    height: 50px;
+    width: 50px;
+  }
+}
+#span {vertical-align:middle;
+    display:inline-block;}
+span {
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block; }
+li {
+  vertical-align: middle;
+  display: inline-block; }
+
+.nav-content { vertical-align: center; }
+img.header-logo { height: 50px; width: 50px; }
+img { height: 320px; width: 320px; text-align: center; }
+.container { text-align: center; }
+.feed-container { text-align: center; margin-left: auto; margin-right: auto; }
+.form-container { text-align: center; margin-left: auto; margin-right: auto; }
+.feed { text-align: center; margin-left: auto; margin-right: auto; }
+.feed-pic { border: solid green; }
+#footer { height: 10%; margin: 0px 0px; margin-top: 10px; background: green; padding-top: 10px; padding-bottom: 10px; text-align: center; border-radius: 10px 10px 0 0; }
+#p-foot   { font-size: .75em; margin: 0px 0px; font-size: 16px; color: lightgreen; }
+
+input[type=submit] { color:green; }
+
+input[type="file"]{
+font-size: 0px;
+}
+
+input[type="file"]::-webkit-file-input-button{
+font-size: 16px; /*normal size*/
+}
+input[type="submit"]::-webkit-file-input-button{
+font-size: 16px; /*normal size*/
+}
+
+@media screen and (max-width: 540px) {}
+@media screen and (min-width: 541px) {}
+
