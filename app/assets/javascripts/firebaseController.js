@@ -8,14 +8,22 @@ function FirebaseController(view, geo, coordinates) {
 FirebaseController.prototype = {
   init: function(array) {
     console.log(array)
-    var photos = this.extractPhotos(array)
-    for (var i = 0; i < photos.length; i++) {
-      this.view.appendPhoto(photos[i])
-    }
+    var photos = this.extractInitialPhotos(array)
+    this.appendPhotosToFeed(photos)
   },
-  extractPhotos: function(array) {
+  extractInitialPhotos: function(array) {
     var initialPhotos = PhotoHandler.getFirstTenPhotos(array)
     var photoUrls = PhotoHandler.extractPhotoUrls(initialPhotos)
     return photoUrls;
+  },
+  updatePhotoStream: function(array) {
+    var photoToAppend = PhotoHandler.getLatestPhoto(array)
+    var photoUrl = PhotoHandler.extractPhotoUrls(photoToAppend)
+    this.appendPhotosToFeed(photoUrl)
+  },
+  appendPhotosToFeed: function(photos) {
+    for (var i = 0; i < photos.length; i++) {
+      this.view.appendPhoto(photos[i])
+    }
   }
 }
