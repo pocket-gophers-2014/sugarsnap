@@ -17,6 +17,6 @@ PhotoHandler = {
   },
   getLatestPhoto: function(photos) {
     var sortedPhotos = this.sortByTimeCreated(photos)
-    return sortedPhotos.slice(0,1)
+    return sortedPhotos.shift()
   }
 }
