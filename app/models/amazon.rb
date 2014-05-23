@@ -1,4 +1,4 @@
-class Amazon
+class Amazon < ActiveRecord::Base
 
   def self.presigned_post
     AWS.config({
@@ -7,7 +7,7 @@ class Amazon
       region: ENV['AWSRegion']})
     @s3 = AWS::S3.new
     @bucket = @s3.buckets['sugarsnapper']
-    @form = @bucket.presigned_post(:key => "images/${filename}")
+    @bucket.presigned_post(:key => "images/${filename}")
   end
 
 end

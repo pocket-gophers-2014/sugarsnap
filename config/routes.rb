@@ -4,4 +4,6 @@ Sugarsnap::Application.routes.draw do
 
   root :to => 'pages#home'
 
+  resources :amazons, only:[:new]
+
 end

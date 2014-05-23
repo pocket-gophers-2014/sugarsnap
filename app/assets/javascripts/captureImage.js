@@ -31,3 +31,23 @@
 
 //   return url;
 // }
+
+$(document).ready(function() {
+  var form =
+  $('#post-photo').on('submit', getAmazonCredentials )
+})
+
+var getAmazonCredentials = function(e) {
+  e.preventDefault()
+  console.log('ajax sent')
+  var request = $.ajax({
+    url: '/amazons/new',
+    type: 'get'
+  })
+  request.done(postPhotoToBucket)
+}
+
+var postPhotoToBucket = function(response) {
+  []
+  ]
+}
