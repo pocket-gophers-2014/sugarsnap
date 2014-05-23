@@ -10,6 +10,7 @@ gem 'rails', '3.2.18'
 gem 'sqlite3'
 gem 'pg'
 gem 'dotenv-rails', '~> 0.11.1'
+gem 'aws-sdk', '~> 1.0'
 
 
 # Gems used only for assets and not required
