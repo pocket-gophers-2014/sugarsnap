@@ -1,12 +1,49 @@
-<%= @sugarsnap %>
-<div id='feed'></div>
+<header>
+  <img src="sugar_snap.png" class='header-logo'>
+  <h1><%= @sugarsnap %></h1>
+</header>
 
-<form action='http://sugarsnapper.s3.amazonaws.com/' method='post' enctype='multipart/form-data'>
-<% @form.fields.map do |(name, value)| %>
-  <input type="hidden" name="<%= name %>" value="<%= value %>">
-<% end %>
-File to upload to S3:
-    <input type='file' name='file' id='photo-snapper' accept='image/*' capture='camera'>
-    <br>
-    <input type='submit' value='Submit this file'>
-</form>
+<div class='form-container'>
+  <form action='http://sugarsnapper.s3.amazonaws.com/' method='post' enctype='multipart/form-data'>
+  <% @form.fields.map do |(name, value)| %>
+    <input type="hidden" name="<%= name %>" value="<%= value %>">
+  <% end %>
+  <p>File to upload to S3:</p>
+      <input type='file' name='file' id='photo-snapper' accept='image/*' capture='camera'>
+      <br>
+      <input type='submit' value='Submit this file'>
+  </form>
+</div>
+
+<div class='feed-container'>
+  <p>Feed goes here; below is just an imitation:</p>
+  <div id='feed'>
+  </div>
+</div>
+
+<div class='container'>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+</div>
