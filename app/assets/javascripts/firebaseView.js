@@ -9,5 +9,9 @@ FirebaseView.prototype = {
   appendPhoto: function(photo) {
     var $feed = this.getFeed();
     $feed.append(photo)
+  },
+  prependNewPhoto: function(photo) {
+    var $feed = this.getFeed();
+    $feed.prepend(photo)
   }
 }

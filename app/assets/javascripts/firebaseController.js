@@ -19,11 +19,11 @@ FirebaseController.prototype = {
   updatePhotoStream: function(array) {
     var photoToAppend = PhotoHandler.getLatestPhoto(array)
     var photoUrl = PhotoHandler.extractPhotoUrls(photoToAppend)
-    this.appendPhotosToFeed(photoUrl)
+    this.view.prependNewPhoto(photoUrl[0])
   },
   appendPhotosToFeed: function(photos) {
     for (var i = 0; i < photos.length; i++) {
       this.view.appendPhoto(photos[i])
     }
-  }
+  },
 }
