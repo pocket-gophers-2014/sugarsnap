@@ -11,7 +11,7 @@ $brown4: #E89C00;
 $brown5: #FFB900;
 
 body {
-  background-image: linear-gradient($brown1, $brown2, $brown3, $brown4);
+  background-image: linear-gradient(to right, $brown1, $brown2, $brown3, $brown4);
 }
 
 header {
@@ -26,7 +26,7 @@ header {
   border: solid $green5;
   border-bottom-width: 10px;
   border-right-width: 10px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 50px 25px;
   .header-logo {
     height: 10%;
     width: auto;
@@ -52,6 +52,9 @@ header {
     width: 50px;
   }
 }
+
+
+
 #span {vertical-align:middle;
     display:inline-block;}
 span {
@@ -60,7 +63,8 @@ span {
     display: inline-block; }
 li {
   vertical-align: middle;
-  display: inline-block; }
+  display: inline-block;
+  font-size: 2em; }
 
 .nav-content { vertical-align: center; }
 img.header-logo { height: 50px; width: 50px; }
@@ -70,6 +74,8 @@ img { height: 320px; width: 320px; text-align: center; }
 .form-container { text-align: center; margin-left: auto; margin-right: auto; }
 .feed { text-align: center; margin-left: auto; margin-right: auto; }
 .feed-pic { border: solid black; }
+
+
 #footer {
   height: 10%;
   margin: 0px 0px;
@@ -79,7 +85,7 @@ img { height: 320px; width: 320px; text-align: center; }
   padding-bottom: 10px;
   text-align: center;
   border: solid $green5;
-  border-radius: 10px 10px 0 0;
+  border-radius: 50px 25px 0 0;
   border-top-width: 10px;
   border-left-width: 10px;
   background-image: linear-gradient($green1, $green2, $green3, $green4) }
