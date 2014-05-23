@@ -5,9 +5,9 @@ function FirebaseView() {
 FirebaseView.prototype = {
   getFeed: function() {
     return $(this.feed)
-  }
-  appendInitialFeed: function() {
-    var feed = this.getFeed();
+  },
+  appendPhoto: function(photo) {
+    // var feed = this.getFeed();
 
   }
 }
