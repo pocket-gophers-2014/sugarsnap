@@ -1,6 +1,8 @@
 <header>
-  <img src="sugar_snap.png" class='header-logo'>
-  <h1><%= @sugarsnap %></h1>
+  <ul>
+    <li><img src="sugar_snap.png" class='header-logo'></li>
+    <li class='nav-content'><span id="span"><%= @sugarsnap %></span></li>
+  </ul>
 </header>
 
 <div class='form-container'>
@@ -8,10 +10,9 @@
   <% @form.fields.map do |(name, value)| %>
     <input type="hidden" name="<%= name %>" value="<%= value %>">
   <% end %>
-  <p>File to upload to S3:</p>
       <input type='file' name='file' id='photo-snapper' accept='image/*' capture='camera'>
       <br>
-      <input type='submit' value='Submit this file'>
+      <input type='submit' id='submit' value='Submit this file'>
   </form>
 </div>
 
@@ -26,8 +27,14 @@
   <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
   <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
   <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
+  <img href="https://s3-us-west-1.amazonaws.com/sugarsnapper/images/" class='feed-pic'><br>
 </div>
 
 <div id="footer">
-      <p id="p-foot">Creators:   <span id="bold">Dave</span>,   <span id="bold">Nick</span>,   and   <span id="bold">Rex</span><br> Source: <a href="https://github.com/pocket-gophers-2014/sugarsnap">Github Project Repo</a></p>
+      <p id="p-foot">Creators:   <span id="bold">Dave</span>,  <span id="bold">Robert</span>,   <span id="bold">Nick</span>,   and   <span id="bold">Rex</span><br> Source: <a href="https://github.com/pocket-gophers-2014/sugarsnap">Github Project Repo</a></p>
     </div>
