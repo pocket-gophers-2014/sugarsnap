@@ -1,22 +1,21 @@
-function CookieController() {
-  this.validDays = 7
-}
-
-CookieController.prototype = {
+CookieController = {
+  validDays: function() {
+    return 7 //constant set here
+  },
   noCookie: function() {
     return document.cookie == ""
   },
-  manageCookies: function(newCoordinates) {
-    if (this.noCookie() || this.newLocation(newCoordinates)){
-      CookieSetter.setCookie(newCoordinates)
+  manageCookies: function(newCoordinates, radius) {
+    if (this.noCookie() || this.newLocation(newCoordinates, radius)){
+      CookieSetter.setCookie(newCoordinates, this.validDays())
     }
   },
-  newLocation: function (newCoordinates) {
+  newLocation: function (newCoordinates, radius) {
     var oldLocations = CookieGetter.getCoordinatePairsfromCookies()
-    var newLocation = true // defualt
+    var newLocation = true
     if (oldLocations) {
       for (var i = 0; i < oldLocations.length; i++) {
-        if (DistanceCalculator.distanceBetween(newCoordinates, oldLocations[i]) < 1) {
+        if (DistanceCalculator.distanceBetween(newCoordinates, oldLocations[i]) < radius) {
           var newLocation = false
         }
       };

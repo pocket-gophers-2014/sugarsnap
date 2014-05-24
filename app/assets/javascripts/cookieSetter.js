@@ -1,7 +1,4 @@
 CookieSetter = {
-  validDays: function() {
-    return 7
-  },
   expirationDate: function(days) {
     var now = new Date()
     var expirationDay = now.getDate()+days

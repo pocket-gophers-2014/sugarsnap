@@ -7,7 +7,7 @@ class Photo < ActiveRecord::Base
                     s3_credentials: Proc.new{|image| image.instance.s3_credentials }
 
   validates_attachment :image,  presence: true,
-                                content_type: {content_type: ["image/jpeg", "image/gif", "image/png"]}
+                                content_type: {content_type: ["image/jpg", "image/jpeg", "image/gif", "image/png"]}
 
 
   def s3_credentials
