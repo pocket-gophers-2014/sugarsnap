@@ -16,6 +16,8 @@ body {
   background-image: linear-gradient(to right, $brown1, $brown2, $brown3, $brown4);
 }
 
+#submit_photo { display: none; }
+
 header {
   background-image: linear-gradient($green1, $green2, $green3, $green4);
   padding-top: 10px;
