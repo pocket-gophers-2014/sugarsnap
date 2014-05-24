@@ -1,5 +1,7 @@
 class PhotosController < ApplicationController
   def create
+    p params
+    p params[:photo][:image]
     @photo = Photo.new(image: params[:photo][:image])
     if @photo.save
       render json: { url: @photo.public_url }
