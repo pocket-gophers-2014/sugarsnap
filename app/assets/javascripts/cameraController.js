@@ -4,13 +4,11 @@ function CameraController(view) {
 
 CameraController.prototype = {
   bindCameraListener: function() {
-    var submitPhotoButton = this.view.getNewPhotoSelector()
-    console.log(submitPhotoButton)
-    $('form').on("submit", this.sendPhotoToServer.bind(this))
+    var submitPhotoButton = this.view.getFormSelector()
+    submitPhotoButton.on("submit", this.sendPhotoToServer.bind(this))
   },
   sendPhotoToServer: function(event) {
     event.preventDefault();
-    var files = event.target[2].files
     var token = TokenScraper.token();
     var formData = FormDataPreparer.prepare(event)
 
@@ -20,15 +18,11 @@ CameraController.prototype = {
     xhr.onload = function(response) {
       if (xhr.status === 200) {
         var url = JSON.parse(response.target.responseText)
-        PhotoSender.sendToFirebase(url["url"])
-        console.log(url["url"])
+        FirebaseCommunicator.sendImageToFirebase(url["url"])
       } else {
-        console.log('fileure!')
+        console.log(response)
       }
     };
     xhr.send(formData);
-  },
-  receiveUrl: function(response) {
-    console.log(response)
   }
 }

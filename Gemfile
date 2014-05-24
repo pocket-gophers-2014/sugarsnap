@@ -33,7 +33,7 @@ gem 'rails_12factor'
 
 group :development, :test do
   gem 'rspec'
-  # gem 'rpsec-rails'
+  gem 'rspec-rails'
   gem 'jasmine'
   gem 'jasmine-rails'
 end
