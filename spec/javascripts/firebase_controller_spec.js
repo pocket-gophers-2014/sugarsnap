@@ -5,14 +5,12 @@ describe('FirebaseController', function() {
   var testController = new FirebaseController(view,geo,coordinates)
   describe('init', function() {
     it('calls appendPhotosToFeed', function() {
-      // var testController = new FirebaseController
       spyOn(testController, 'appendPhotosToFeed')
       spyOn(testController, 'extractInitialPhotos')
       testController.init()
       expect(testController.appendPhotosToFeed).toHaveBeenCalled()
     })
     it('calls extractInitialPhotos', function() {
-      // var testController = new FirebaseController
       spyOn(testController, 'appendPhotosToFeed')
       spyOn(testController, 'extractInitialPhotos')
       testController.init()
