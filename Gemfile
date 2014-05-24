@@ -10,7 +10,7 @@ gem 'rails', '3.2.18'
 gem 'pg'
 gem 'dotenv-rails', '~> 0.11.1'
 gem 'aws-sdk', '~> 1.0'
-
+gem "paperclip", "~> 4.1"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -25,6 +25,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'jasmine-jquery-rails'
 
 
 #Fix for heroku deprecating warning on-compile
@@ -33,6 +34,7 @@ gem 'rails_12factor'
 group :development, :test do
   gem 'rspec'
   # gem 'rpsec-rails'
+  gem 'jasmine'
   gem 'jasmine-rails'
 end
 
