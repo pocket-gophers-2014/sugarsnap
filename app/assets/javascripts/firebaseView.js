@@ -1,6 +1,7 @@
 function FirebaseView() {
   this.feed = '#feed'
   this.hidden = '.hidden'
+  this.waiting = '#waiting'
 }
 
 FirebaseView.prototype = {
@@ -18,6 +19,7 @@ FirebaseView.prototype = {
   prependNewPhoto: function(photoUrl) {
     var $feed = this.getFeed();
     var newPhoto = this.createPhotoTemplate(photoUrl);
+    this.removePendingLoadAnimation()
     $feed.prepend(newPhoto)
   },
   createPhotoTemplate: function(photoUrl) {
@@ -25,6 +27,15 @@ FirebaseView.prototype = {
     $photo.attr('src', photoUrl)
     $photo.removeClass('hidden')
     return $photo
+  },
+  getWaitingSelector: function() {
+    return $(this.waiting)
+  },
+  removePendingLoadAnimation: function() {
+    $waitingSelector = this.getWaitingSelector()
+    if($waitingSelector) {
+      $waitingSelector.remove()
+    }
   }
 
 }
