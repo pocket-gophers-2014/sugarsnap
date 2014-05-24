@@ -2,7 +2,7 @@
 <div id='feed'></div>
 
 
-<%= form_for @photo, remote: true, id: 'post-photo' do |t| %>
-  <%= t.file_field :image, accept: 'image/*', capture: 'camera' %>
-  <%= t.submit %>
+<%= form_for @photo do |f| %>
+  <%= f.file_field :image, accept: 'image/*', capture: 'camera' %>
+  <%= f.submit "Submit", id: "submit_photo" %>
 <% end %>
