@@ -10,7 +10,6 @@ CameraController.prototype = {
   },
   sendPhotoToServer: function(event) {
     event.preventDefault();
-    var files = event.target[2].files
     var token = TokenScraper.token();
     var formData = FormDataPreparer.prepare(event)
 
@@ -21,9 +20,8 @@ CameraController.prototype = {
       if (xhr.status === 200) {
         var url = JSON.parse(response.target.responseText)
         FirebaseCommunicator.sendImageToFirebase(url["url"])
-        console.log(url["url"])
       } else {
-        console.log('fileure!')
+        console.log(response)
       }
     };
     xhr.send(formData);
