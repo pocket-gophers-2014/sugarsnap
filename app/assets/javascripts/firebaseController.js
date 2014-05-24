@@ -24,5 +24,5 @@ FirebaseController.prototype = {
     for (var i = 0; i < photos.length; i++) {
       this.view.appendPhoto(photos[i])
     }
-  },
+  }
 }
