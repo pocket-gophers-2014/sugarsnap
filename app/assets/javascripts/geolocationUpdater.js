@@ -1,16 +1,15 @@
 LocationUpdater = {
-
 	getCoordinates: function() {
 		navigator.geolocation.getCurrentPosition(this.initializeFeed,this.errors)
 	},
 	initializeFeed: function (posObject) {
-		var coordinates = posObject.coords
-		var coordinatesArray = [coordinates.latitude,coordinates.longitude]
-		var firebaseController = new FirebaseController(new FirebaseView(),FirebaseConnection.getGeo(), coordinatesArray)
+		var coordinateObject = posObject.coords
+		coordinates = [coordinateObject.latitude,coordinateObject.longitude]
+		var firebaseController = new FirebaseController(new FirebaseView(),FirebaseConnection.getGeo(), coordinates)
 		FirebaseCommunicator.getInitialPhotos(firebaseController)
 		FirebaseCommunicator.addAutomaticUpdate(firebaseController)
 	},
 	errors: function () {
 		console.log('we are screwed')
-	}
+	},
 }
