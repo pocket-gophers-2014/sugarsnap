@@ -6,7 +6,7 @@ describe('PhotoHandler', function() {
         expect(PhotoHandler.extractPhotoUrls(testArray)).toEqual(["url"])
     })
   })
-  describe('sortByTimeCreate', function(){
+  describe('sortByTimeCreated', function(){
     it('returns an array sorted in descending order by createdAt', function() {
       var testArray = [{createdAt:1,value:1},{createdAt:2,value:0}]
       expect(PhotoHandler.sortByTimeCreated(testArray)).toEqual([{createdAt:2,value:0},{createdAt:1,value:1}])
