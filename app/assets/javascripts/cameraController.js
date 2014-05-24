@@ -20,6 +20,7 @@ CameraController.prototype = {
     xhr.onload = function(response) {
       if (xhr.status === 200) {
         var url = JSON.parse(response.target.responseText)
+        PhotoSender.sendToFirebase(url["url"])
         console.log(url["url"])
       } else {
         console.log('fileure!')
