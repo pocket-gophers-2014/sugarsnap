@@ -9,6 +9,8 @@ LocationUpdater = {
 		var firebaseController = new FirebaseController(new FirebaseView(),FirebaseConnection.getGeo(), coordinates)
 		FirebaseCommunicator.getInitialPhotos(firebaseController)
 		FirebaseCommunicator.addAutomaticUpdate(firebaseController)
+		var cookieSetter = new cookieMonster
+		cookieSetter.setCookie(coordinates)
 	},
 	errors: function () {
 		console.log('we are screwed')
