@@ -10,20 +10,19 @@ CameraController.prototype = {
   },
   sendPhotoToServer: function(event) {
     event.preventDefault();
-
+    var files = event.target[2].files
     var token = TokenScraper.token();
     var formData = FormDataPreparer.prepare(event)
 
     var xhr = new XMLHttpRequest()
-    xhr.open(event.method, event.action, true);
+    xhr.open(event.target.method, event.target.action, true);
     xhr.setRequestHeader("X-CSRF-Token", token);
     xhr.onload = function(response) {
       if (xhr.status === 200) {
         var url = JSON.parse(response.target.responseText)
-        WhateverRobertBuilds.nameOfFunction(url["url"])
-
+        console.log(url["url"])
       } else {
-        console.log(response)
+        console.log('fileure!')
       }
     };
     xhr.send(formData);
