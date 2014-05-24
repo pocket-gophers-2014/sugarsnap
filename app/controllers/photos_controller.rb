@@ -11,7 +11,7 @@ class PhotosController < ApplicationController
     if @photo.save
       render json: { url: @photo.public_url }
     else
-      render json: { hey: @photo.errors.full_messages }
+      render json: { errors: @photo.errors.full_messages }
     end
 
   end
