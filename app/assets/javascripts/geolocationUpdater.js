@@ -10,6 +10,7 @@ LocationUpdater = {
 		var firebaseController = new FirebaseController(new FirebaseView(),FirebaseConnection.getGeo(), coordinates)
 		FirebaseCommunicator.getInitialPhotos(firebaseController)
 		FirebaseCommunicator.addAutomaticUpdate(firebaseController)
+		SubmissionModule.listenForFileUpload()
 	},
 	errors: function () {
 		// console.log('we are screwed')
