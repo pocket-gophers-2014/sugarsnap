@@ -25,6 +25,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'jasmine-jquery-rails'
 
 
 #Fix for heroku deprecating warning on-compile
@@ -33,6 +34,7 @@ gem 'rails_12factor'
 group :development, :test do
   gem 'rspec'
   # gem 'rpsec-rails'
+  gem 'jasmine'
   gem 'jasmine-rails'
 end
 
