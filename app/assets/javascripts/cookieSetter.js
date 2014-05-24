@@ -17,18 +17,6 @@ CookieSetter = {
   },
   setCookie: function(coord, days) {
     document.cookie = this.cookieText(coord, days)
-  },
-  readCookieCoordinates: function() {
-    var cookie = document.cookie
-    var oldCookies = []
-    if (cookie !== ""){
-      oldCookies = cookie.split(';')
-    }
-    var coords = []
-    for (var i = 0; i < oldCookies.length; i++) {
-       coords.push(new Array(oldCookies[i].split('=')[1]))
-     };
-    return coords
   }
 }
 
