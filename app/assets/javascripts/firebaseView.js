@@ -1,23 +1,30 @@
 function FirebaseView() {
   this.feed = '#feed'
+  this.hidden = '.hidden'
 }
 
 FirebaseView.prototype = {
   getFeed: function() {
     return $(this.feed)
   },
-  appendPhoto: function(photo) {
+  getHiddenTemplate: function() {
+    return $(this.hidden)
+  },
+  appendPhoto: function(photoUrl) {
     var $feed = this.getFeed();
-    var initialPhoto = $('.hidden').clone()
-    initialPhoto.attr('src', photo);
-    initialPhoto.removeClass('hidden');
+    var initialPhoto = this.createPhotoTemplate(photoUrl)
     $feed.append(initialPhoto)
   },
-  prependNewPhoto: function(photo) {
+  prependNewPhoto: function(photoUrl) {
     var $feed = this.getFeed();
-    var newPhoto = $('.hidden').clone()
-    newPhoto.attr('src', photo);
-    newPhoto.removeClass('hidden');
+    var newPhoto = this.createPhotoTemplate(photoUrl);
     $feed.prepend(newPhoto)
+  },
+  createPhotoTemplate: function(photoUrl) {
+    var $photo = this.getHiddenTemplate();
+    $photo.attr('src', photoUrl)
+    $photo.removeClass('hidden')
+    return $photo
   }
+
 }
