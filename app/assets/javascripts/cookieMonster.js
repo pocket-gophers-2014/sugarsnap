@@ -23,9 +23,9 @@ CookieSetter = {
     var cookie = document.cookie.split(';')
     var coords = []
     for (var i = 0; i < cookie.length; i++) {
-       coords.push(cookie.split('='))
+       coords.push(new Array(cookie[i].split('=')[1]))
      };
-    console.log(coords)
+    return coords
   }
 }
 
