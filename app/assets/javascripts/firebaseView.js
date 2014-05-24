@@ -13,7 +13,6 @@ FirebaseView.prototype = {
   appendPhoto: function(photoUrl) {
     var $feed = this.getFeed();
     var initialPhoto = this.createPhotoTemplate(photoUrl)
-    console.log(initialPhoto)
     $feed.append(initialPhoto)
   },
   prependNewPhoto: function(photoUrl) {
