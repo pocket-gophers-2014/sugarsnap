@@ -3,19 +3,21 @@ function CookieController() {
 }
 
 CookieController.prototype = {
+  noCookie: function() {
+    return document.cookie == ""
+  },
   manageCookies: function(newCoordinates) {
-    if (this.newLocation(newCoordinates)){
+    if (this.noCookie() || this.newLocation(newCoordinates)){
       CookieSetter.setCookie(newCoordinates)
     }
   },
   newLocation: function (newCoordinates) {
-    var oldLocations = CookieSetter.readCookieCoordinates()
-
-    var newLocation = true
+    var oldLocations = CookieGetter.getCoordinatePairsfromCookies()
+    var newLocation = true // defualt
     if (oldLocations) {
       for (var i = 0; i < oldLocations.length; i++) {
         if (DistanceCalculator.distanceBetween(newCoordinates, oldLocations[i]) < 1) {
-          newLocation = false
+          var newLocation = false
         }
       };
     }

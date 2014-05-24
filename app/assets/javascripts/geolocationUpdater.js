@@ -6,12 +6,10 @@ LocationUpdater = {
 		var coordinateObject = posObject.coords
 		// sets global var
 		coordinates = [coordinateObject.latitude,coordinateObject.longitude]
-		var cookieMonster = new CookieSetter().setLocationCookie()
 		var firebaseController = new FirebaseController(new FirebaseView(),FirebaseConnection.getGeo(), coordinates)
 		FirebaseCommunicator.getInitialPhotos(firebaseController)
 		FirebaseCommunicator.addAutomaticUpdate(firebaseController)
-		var cookieSetter = new cookieMonster
-		cookieSetter.setCookie(coordinates)
+		new CookieController().manageCookies(coordinates)
 	},
 	errors: function () {
 		// console.log('we are screwed')

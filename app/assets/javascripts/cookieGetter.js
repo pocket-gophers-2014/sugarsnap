@@ -1,31 +1,29 @@
-cookieGetter = {
-  cookieExists: function() {
-    return document.cookie !== ""
-  },
-  splitCookie: function() {
-    document.cookie.split(';')
-  },
+CookieGetter = {
   getOldCookies: function() {
-    if (this.cookieExists()){
-      return this.splitCookies()
-    }
+    return document.cookie.split(';')
+  },
+  getCoordinateStringsFromCookies: function() {
+    var oldCookies = this.getOldCookies()
+    for (var i = 0; i < oldCookies.length; i++) {
+      oldCookies[i] = oldCookies[i].split('=')[1]
+    };
+    return oldCookies
+  },
+  splitCoordinateStringIntoNumbers: function() {
+    var coordinatePairs = this.getCoordinateStringsFromCookies()
+    for (var i = 0; i < coordinatePairs.length; i++) {
+      coordinatePairs[i] = coordinatePairs[i].split(',')
+    };
+    return coordinatePairs
+  },
+  getCoordinatePairsfromCookies: function() {
+    var coordinateFloats = this.splitCoordinateStringIntoNumbers()
+    for (var i = 0; i < coordinateFloats.length; i++) {
+      for (var j = 0; j < coordinateFloats[i].length; j++) {
+        coordinateFloats[i][j] = parseFloat(coordinateFloats[i][j])
+      };
+    };
+    return coordinateFloats
   }
 }
 
-
-
-
-getCookieCoordinates: function() {
-    var coords = []
-    for (var i = 0; i < oldCookies.length; i++) {
-      var location = oldCookies[i].split('=')[1]
-      location.split(',')
-
-
-        for (var i = 0; i < location.length; i++) {
-          parseFloat(location[i])
-        };
-        debugger
-        coords.push( location )
-     };
-   },

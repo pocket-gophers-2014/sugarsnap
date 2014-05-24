@@ -1,8 +1,6 @@
 DistanceCalculator = {
   distanceBetween: function (coordinates1, coordinates2) {
-    console.log(coordinates1)
-    console.log(coordinates2)
-
+    // Haversine formula uses toRad() defined on Number
     var lat1 = coordinates1[0]
     var lat2 = coordinates2[0]
     var lon1 = coordinates1[1]
