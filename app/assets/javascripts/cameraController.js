@@ -4,9 +4,8 @@ function CameraController(view) {
 
 CameraController.prototype = {
   bindCameraListener: function() {
-    var submitPhotoButton = this.view.getNewPhotoSelector()
-    console.log(submitPhotoButton)
-    $('form').on("submit", this.sendPhotoToServer.bind(this))
+    var submitPhotoButton = this.view.getFormSelector()
+    submitPhotoButton.on("submit", this.sendPhotoToServer.bind(this))
   },
   sendPhotoToServer: function(event) {
     event.preventDefault();
