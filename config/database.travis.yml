@@ -1,7 +1,7 @@
 postgresql: &postgresql
   adapter: postgresql
   username: postgres
-  database: sugar_snap_<%= Rails.env %>
+  database: sugarsnap_<%= Rails.env %>
   min_messages: ERROR
 
 defaults: &defaults
