@@ -12,6 +12,9 @@ FirebaseView.prototype = {
   },
   prependNewPhoto: function(photo) {
     var $feed = this.getFeed();
-    $feed.prepend(photo)
+    var newPhoto = $('.hidden').clone()
+    newPhoto.attr('src', photo);
+    newPhoto.removeClass('hidden');
+    $feed.prepend(newPhoto)
   }
 }

@@ -9,11 +9,18 @@ class Photo < ActiveRecord::Base
   validates_attachment :image,  presence: true,
                                 content_type: {content_type: ["image/jpeg", "image/gif", "image/png"]}
 
+
   def s3_credentials
     { bucket: 'sugarsnapper',
       access_key_id: ENV['AWSAccessKeyId'],
       secret_access_key: ENV['AWSSecretKey'],
       region: ENV['AWSRegion']}
+  end
+
+  def public_url
+    path = self.image.path
+    path.gsub!(/original/, 'medium')
+    "http://s3-us-west-1.amazonaws.com/sugarsnapper#{path}"
   end
 
 
