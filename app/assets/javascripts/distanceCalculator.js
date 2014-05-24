@@ -1,15 +1,18 @@
 DistanceCalculator = {
   distanceBetween: function (coordinates1, coordinates2) {
+    console.log(coordinates1)
+    console.log(coordinates2)
+    debugger
     var lat1 = coordinates1[0]
     var lat2 = coordinates2[0]
     var lon1 = coordinates1[1]
     var lon2 = coordinates2[1]
 
     var R = 6371; // km
-    var φ1 = lat1.toRadians();
-    var φ2 = lat2.toRadians();
-    var Δφ = (lat2-lat1).toRadians();
-    var Δλ = (lon2-lon1).toRadians();
+    var φ1 = lat1.toRad();
+    var φ2 = lat2.toRad();
+    var Δφ = (lat2-lat1).toRad();
+    var Δλ = (lon2-lon1).toRad();
 
     var a = Math.sin(Δφ/2) * Math.sin(Δφ/2) +
     Math.cos(φ1) * Math.cos(φ2) *
