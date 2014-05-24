@@ -1,9 +1,11 @@
 Sugarsnap
 =========
 
-DevBootcamp Final Project
+![alt text](https://travis-ci.org/pocket-gophers-2014/sugarsnap.svg?branch=master "Travis CI Status")
 
-Project Team: Dave Schaaf, Robert Benapfl, Nick Meehan, Rex Suter
 
-Location based photo-sharing application
+##DevBootcamp Final Project
 
+Location-based photo-sharing application
+
+###Project Team: Dave Schaaf, Robert Benapfl, Nick Meehan, Rex Suter
