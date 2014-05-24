@@ -34,4 +34,7 @@ Sugarsnap::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # letting Paperclip know where ImageMagick is
+  # Paperclip.option[:command_path] = "/usr/local/bin/"
 end

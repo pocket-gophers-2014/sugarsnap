@@ -6,14 +6,11 @@
 </header>
 
 <div class='form-container'>
-  <form action='http://sugarsnapper.s3.amazonaws.com/' method='post' enctype='multipart/form-data'>
-  <% @form.fields.map do |(name, value)| %>
-    <input type="hidden" name="<%= name %>" value="<%= value %>">
-  <% end %>
-      <input type='file' name='file' id='photo-snapper' accept='image/*' capture='camera'>
-      <br>
-      <input type='submit' id='submit' value='Submit this file'>
-  </form>
+  <%= form_for @photo do |f| %>
+  <%= f.file_field :image, accept: 'image/*', capture: 'camera' %>
+  <%= f.submit "Submit", id: "submit_photo" %>
+<% end %>
+
 </div>
 
 <div class='feed-container'>
@@ -38,3 +35,4 @@
 <div id="footer">
       <p id="p-foot">Creators:   <span id="bold">Dave</span>,  <span id="bold">Robert</span>,   <span id="bold">Nick</span>,   and   <span id="bold">Rex</span><br> Source: <a href="https://github.com/pocket-gophers-2014/sugarsnap">Github Project Repo</a></p>
     </div>
+
