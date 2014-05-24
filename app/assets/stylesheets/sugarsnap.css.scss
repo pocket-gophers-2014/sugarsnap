@@ -1,5 +1,21 @@
+$green1: #00FF4E;
+$green2: #00E823;
+$green3: #01FF00;
+$green4: #2DE800;
+$green5: #61FF00;
+
+$brown1: #FF7900;
+$brown2: #E88000;
+$brown3: #FF9D00;
+$brown4: #E89C00;
+$brown5: #FFB900;
+
+body {
+  background-image: linear-gradient(to right, $brown1, $brown2, $brown3, $brown4);
+}
+
 header {
-  background: green;
+  background-image: linear-gradient($green1, $green2, $green3, $green4);
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: none;
@@ -7,13 +23,15 @@ header {
   display: block;
   clear: both;
   text-align: center;
-  border: solid lightgreen;
-  border-radius: 0 0 10px 10px;
+  border: solid $green5;
+  border-bottom-width: 10px;
+  border-right-width: 10px;
+  border-radius: 0 0 50px 25px;
   .header-logo {
     height: 10%;
     width: auto;
     display: inline-block;
-    border: solid lightgreen;
+    border: solid $green5;
     border-radius: 50px;
   }
   ul {
@@ -26,7 +44,7 @@ header {
     display: inline;
     line-height: 40px;
     width: auto;
-    color: lightgreen;
+    color: black;
     vertical-align: center;
   }
   ul li img {
@@ -34,6 +52,9 @@ header {
     width: 50px;
   }
 }
+
+
+
 #span {vertical-align:middle;
     display:inline-block;}
 span {
@@ -42,7 +63,8 @@ span {
     display: inline-block; }
 li {
   vertical-align: middle;
-  display: inline-block; }
+  display: inline-block;
+  font-size: 2em; }
 
 .nav-content { vertical-align: center; }
 img.header-logo { height: 50px; width: 50px; }
@@ -51,11 +73,25 @@ img { height: 320px; width: 320px; text-align: center; }
 .feed-container { text-align: center; margin-left: auto; margin-right: auto; }
 .form-container { text-align: center; margin-left: auto; margin-right: auto; }
 .feed { text-align: center; margin-left: auto; margin-right: auto; }
-.feed-pic { border: solid green; }
-#footer { height: 10%; margin: 0px 0px; margin-top: 10px; background: green; padding-top: 10px; padding-bottom: 10px; text-align: center; border-radius: 10px 10px 0 0; }
-#p-foot   { font-size: .75em; margin: 0px 0px; font-size: 16px; color: lightgreen; }
+.feed-pic { border: solid black; }
 
-input[type=submit] { color:green; }
+
+#footer {
+  height: 10%;
+  margin: 0px 0px;
+  margin-top: 10px;
+  background: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border: solid $green5;
+  border-radius: 50px 25px 0 0;
+  border-top-width: 10px;
+  border-left-width: 10px;
+  background-image: linear-gradient($green1, $green2, $green3, $green4) }
+#p-foot   { font-size: .75em; margin: 0px 0px; font-size: 16px; color: black; }
+
+input[type=submit] { color:black; }
 
 input[type="file"]{
 font-size: 0px;
