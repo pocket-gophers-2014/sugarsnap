@@ -3,6 +3,7 @@ function FirebaseController(view, geo, coordinates) {
   this.geo = geo;
   this.coordinates = coordinates;
   this.radius = 1;
+  this.updatedLocation = true
 }
 
 FirebaseController.prototype = {
@@ -16,13 +17,23 @@ FirebaseController.prototype = {
     return photoUrls;
   },
   updatePhotoStream: function(array) {
-    var photoToAppend = PhotoHandler.getLatestPhoto(array)
-    this.view.removePendingLoadAnimation()
-    this.view.prependNewPhoto(photoToAppend.photoUrl)
+    if (this.updatedLocation) {
+      var photoToAppend = PhotoHandler.getLatestPhoto(array)
+      this.view.removePendingLoadAnimation()
+      this.view.prependNewPhoto(photoToAppend.photoUrl)
+    } else {
+      this.updatedLocation = true
+      this.coordinates = coordinates
+      console.log("updated coordinates")
+    }
   },
   appendPhotosToFeed: function(photos) {
     for (var i = 0; i < photos.length; i++) {
       this.view.appendPhoto(photos[i])
     }
+  },
+  locationChanged: function() {
+    this.updatedLocation = false
   }
+
 }

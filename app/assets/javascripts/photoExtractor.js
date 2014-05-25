@@ -7,7 +7,7 @@ PhotoHandler = {
   },
   getFirstTenPhotos: function(photos) {
     var sortedPhotos = this.sortByTimeCreated(photos)
-    return sortedPhotos.slice(1,10)
+    return sortedPhotos.slice(0,100)
   },
   sortByTimeCreated: function(photos) {
     var sortedPhotos = photos.sort(function(a, b) {
