@@ -1,11 +1,23 @@
 $shittygreen: #85E085;
 .hidden { display: none; }
 
+body {
+  background: url("http://subtlepatterns.com/patterns/sativa.png") repeat;
+}
 
+h1 {
+  font-family: 'Miltonian Tattoo', cursive;
+  font-size: 55px;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  padding: none;
+  }
 
 header {
   margin: none;
   background: #85E085;
+  height: 110px;
+  margin: none;
   padding: none;
   position: fixed;
   top: 0px;
@@ -23,12 +35,13 @@ img {
   height: 320px;
   width: 320px;
   text-align: center;
+  margin: 5px;
 }
 
 
 .feed-container {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 115px;
   margin-bottom: 110px;
   margin-left: auto;
   margin-right: auto;
