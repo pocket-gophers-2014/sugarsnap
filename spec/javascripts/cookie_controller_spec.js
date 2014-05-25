@@ -16,7 +16,19 @@ describe('CookieController', function () {
     expect(cookieController.newLocation).toBeDefined();
   });
   it('detects when a new location cookie should be added', function() {
-    expect(cookieController.newLocation).toBeDefined();
+    function MockCookie() {
+      this.str = '';
+      this.__defineGetter__('cookie', function() {
+        return this.str;
+      });
+      this.__defineSetter__('cookie', function(s) {
+        this.str += (this.str ? ';' : '') + s;
+        return this.str;
+      });
+    }
+    var mock = new MockCookie();
+    mock.cookie = 'sugarsnap12345=37.7844234,-122.3970566';
+    expect()
   });
 
 
