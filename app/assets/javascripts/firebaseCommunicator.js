@@ -13,7 +13,7 @@ var FirebaseCommunicator = {
     geo.insertByLoc(userPosition, photoObject)
   },
   updateCoordinateListener: function() {
-    firebaseController.geo.offPointsNearLoc(firebaseController.coordinates, firebaseController.radius)
+    // firebaseController.geo.offPointsNearLoc(firebaseController.coordinates, firebaseController.radius)
     FirebaseCommunicator.addNewListener()
   },
   addNewListener: function() {
