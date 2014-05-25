@@ -14,15 +14,14 @@ CameraController.prototype = {
     SpinnerModule.renderSpinnerAnimation();
     var xhr = new XMLHttpRequest()
     xhr.open(event.target.method, event.target.action, true);
-    debugger
     xhr.setRequestHeader("X-CSRF-Token", token);
     xhr.onload = function(response) {
       if (xhr.status === 200) {
         console.log(response.target.responseText)
         var url = JSON.parse(response.target.responseText)
         FirebaseCommunicator.sendImageToFirebase(url["url"])
-      } else {
-        console.log(response)
+      } else if (xhr.status === 422 || xkr.status === 500){
+        console.log(response) //need to remove spinner, give error message
       }
     };
     xhr.send(formData);
