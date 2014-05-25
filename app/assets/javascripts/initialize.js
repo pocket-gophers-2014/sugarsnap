@@ -1,6 +1,7 @@
 $(document).ready(function() {
   new CameraController(new CameraView()).bindCameraListener()
-  // global var
-  var coordinates = []
+  var firebaseController
+  var coordinates
   LocationUpdater.getCoordinates()
+  LocationUpdater.setCoordinateUpdater()
 })
