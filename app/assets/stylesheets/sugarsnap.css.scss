@@ -1,111 +1,183 @@
-$green1: #00FF4E;
-$green2: #00E823;
-$green3: #01FF00;
-$green4: #2DE800;
-$green5: #61FF00;
-
-$brown1: #FF7900;
-$brown2: #E88000;
-$brown3: #FF9D00;
-$brown4: #E89C00;
-$brown5: #FFB900;
-
+$shittygreen: #85E085;
 .hidden { display: none; }
 
 body {
-  background-image: linear-gradient(to right, $brown1, $brown2, $brown3, $brown4);
+  background: url("http://subtlepatterns.com/patterns/sativa.png") repeat;
 }
 
-#submit_photo { display: none; }
+h1 {
+  font-family: 'Miltonian Tattoo', cursive;
+  font-size: 55px;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  padding: none;
+  }
 
 header {
-  background-image: linear-gradient($green1, $green2, $green3, $green4);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: none;
-  margin-bottom: none;
+  margin: none;
+  background: #85E085;
+  height: 110px;
+  margin: none;
+  padding: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
   display: block;
   clear: both;
   text-align: center;
-  border: solid $green5;
-  border-bottom-width: 10px;
-  border-right-width: 10px;
-  border-radius: 0 0 50px 25px;
-  .header-logo {
-    height: 10%;
-    width: auto;
-    display: inline-block;
-    border: solid $green5;
-    border-radius: 50px;
-  }
-  ul {
-    list-style: none;
-    width: auto;
-    vertical-align: center;
-  }
-  ul li {
-    list-style: none;
-    display: inline;
-    line-height: 40px;
-    width: auto;
-    color: black;
-    vertical-align: center;
-  }
-  ul li img {
-    height: 50px;
-    width: 50px;
-  }
 }
 
 
 
-#span {vertical-align:middle;
-    display:inline-block;}
-span {
-    height: 100%;
-    vertical-align: middle;
-    display: inline-block; }
-li {
-  vertical-align: middle;
-  display: inline-block;
-  font-size: 2em; }
 
-.nav-content { vertical-align: center; }
-img.header-logo { height: 50px; width: 50px; }
-img { height: 320px; width: 320px; text-align: center; }
-.container { text-align: center; }
-.feed-container { text-align: center; margin-left: auto; margin-right: auto; }
-.form-container { text-align: center; margin-left: auto; margin-right: auto; }
-.feed { text-align: center; margin-left: auto; margin-right: auto; }
-.feed-pic { border: solid black; }
-
-
-#footer {
-  height: 10%;
-  margin: 0px 0px;
-  margin-top: 10px;
-  background: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
+img {
+  height: 320px;
+  width: 320px;
   text-align: center;
-  border: solid $green5;
-  border-radius: 50px 25px 0 0;
-  border-top-width: 10px;
-  border-left-width: 10px;
-  background-image: linear-gradient($green1, $green2, $green3, $green4) }
-#p-foot   { font-size: .75em; margin: 0px 0px; font-size: 16px; color: black; }
-
-input[type=submit] { color:black; }
-
-input[type="file"]{
-font-size: 0px;
+  margin: 5px;
 }
 
-input[type="file"]::-webkit-file-input-button{
-font-size: 16px; /*normal size*/
+
+.feed-container {
+  text-align: center;
+  margin-top: 115px;
+  margin-bottom: 110px;
+  margin-left: auto;
+  margin-right: auto;
 }
-input[type="submit"]::-webkit-file-input-button{
-font-size: 16px; /*normal size*/
+
+
+
+.form-container {
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+
+
+.feed {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+footer {
+  padding-bottom: 75px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 100px;
+  width: 100%;
+  background: #85E085;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+
+input[type="file"] {
+  height: 100px;
+  width: 100px;
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
+  left: 38.5%;
+  right: 38.5%;
+
+  @media (min-width: 981px) {
+    height: 100px;
+    width: 100px;
+    opacity: 0;
+    bottom: 0px;
+    left: 47.7%;
+    right: 47.7%;
+  }
+}
+
+
+#camera-icon {
+  width: 90px;
+  height: 90px;
+  border: solid 2px black;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 0;
+  bottom: 0px;
+  left: 38%;
+  right: 38%;
+  margin-bottom: 3px;
+
+  @media (min-width: 981px) {
+    width: 90px;
+    height: 90px;
+    border: solid 2px black;
+    border-radius: 20px;
+    bottom: 0px;
+    left: 47.6%;
+    right: 47.6%;
+    margin-bottom: 3px;
+  }
+}
+
+
+#camera_icon_left {
+  width: 90px;
+  height: 90px;
+  border: solid 2px black;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 0;
+  bottom: 0px;
+  left: 21%;
+  right: 21%;
+  margin-bottom: 3px;
+
+  @media (min-width: 981px) {
+    width: 90px;
+    height: 90px;
+    border: solid 2px black;
+    border-radius: 20px;
+    bottom: 0px;
+    left: 47.6%;
+    right: 47.6%;
+    margin-bottom: 3px;
+  }
+}
+
+
+
+#submit_photo {
+  display: none;
+  opacity: 0;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
+  left: 55%;
+}
+
+#cloud_icon {
+  display: none;
+  width: 74px;
+  height: 74px;
+  border: solid 2px black;
+  border-radius: 20px;
+  position: absolute;
+  padding: 8px;
+  z-index: 0;
+  bottom: 0px;
+  left: 55%;
+  margin-bottom: 3px;
 }
 
 @media screen and (max-width: 540px) {}
