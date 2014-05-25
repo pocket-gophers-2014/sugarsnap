@@ -1,6 +1,6 @@
 CookieController = {
   validDays: function() {
-    return 7 //constant set here
+    return 7 //cookie period set here
   },
   noCookie: function() {
     return document.cookie === ""

@@ -13,6 +13,10 @@
 
 ActiveRecord::Schema.define(:version => 20140523192215) do
 
+  create_table "images", :force => true do |t|
+    t.string "image"
+  end
+
   create_table "photos", :force => true do |t|
     t.string   "url"
     t.string   "image_file_name"
