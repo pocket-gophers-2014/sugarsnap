@@ -8,6 +8,10 @@ SubmissionModule = {
         case 'jpg':
         case 'png':
         case 'gif':
+        case 'JPEG':
+        case 'JPG':
+        case 'PNG':
+        case 'GIF':
           $('#submit_photo').css('display', 'inline');
           break;
         default:
