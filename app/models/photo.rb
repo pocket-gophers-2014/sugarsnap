@@ -11,7 +11,7 @@ class Photo < ActiveRecord::Base
 
 
   def s3_credentials
-    { bucket: 'sugarsnapper',
+    { bucket: ENV['AWSBucket'],
       access_key_id: ENV['AWSAccessKeyId'],
       secret_access_key: ENV['AWSSecretKey'],
       region: ENV['AWSRegion']}
@@ -20,8 +20,7 @@ class Photo < ActiveRecord::Base
   def public_url
     path = self.image.path
     path.gsub!(/original/, 'medium')
-    "http://s3-us-west-1.amazonaws.com/sugarsnapper#{path}"
+    "http://s3-us-west-1.amazonaws.com/ENV['AWSBucket']#{path}"
   end
-
 
 end
