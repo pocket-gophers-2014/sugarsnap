@@ -1,8 +1,6 @@
 Sugarsnap
 =========
 
-![alt text](https://travis-ci.org/pocket-gophers-2014/sugarsnap.svg?branch=master "Travis CI Status")
-
 
 ##DevBootcamp Final Project
 
