@@ -1,6 +1,6 @@
 var FirebaseCommunicator = {
   getInitialPhotos: function(controller) {
-    controller.geo.getPointsNearLoc(controller.coordinates, controller.radius, function(array) {
+    controller.geo.onPointsNearLoc(controller.coordinates, controller.radius, function(array) {
       controller.init(array);
     })
   },
@@ -12,10 +12,13 @@ var FirebaseCommunicator = {
     photoObject = { photoUrl: url, createdAt: timeStamp }
     geo.insertByLoc(userPosition, photoObject)
   },
-  updateCoordinateListener: function(controller) {
-    controller.geo.offPointsNearLoc(controller.coordinates, controller.radius)
-    controller.geo.onPointsNearLoc(coordinates, controller.radius, function(array) {
-      controller.updatePhotoStream(array);
+  updateCoordinateListener: function() {
+    // firebaseController.geo.offPointsNearLoc(firebaseController.coordinates, firebaseController.radius)
+    FirebaseCommunicator.addNewListener()
+  },
+  addNewListener: function() {
+    firebaseController.geo.onPointsNearLoc(coordinates, firebaseController.radius, function(array) {
+    firebaseController.updatePhotoStream(array);
     })
   }
 }
