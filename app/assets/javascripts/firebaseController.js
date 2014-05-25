@@ -10,6 +10,7 @@ FirebaseController.prototype = {
   init: function(array) {
     var photos = this.extractInitialPhotos(array)
     this.appendPhotosToFeed(photos)
+    LocationUpdater.setCoordinateUpdater()
   },
   extractInitialPhotos: function(array) {
     var initialPhotos = PhotoHandler.getFirstTenPhotos(array)
@@ -35,5 +36,4 @@ FirebaseController.prototype = {
   locationChanged: function() {
     this.updatedLocation = false
   }
-
 }

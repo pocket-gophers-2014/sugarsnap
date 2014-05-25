@@ -3,5 +3,4 @@ $(document).ready(function() {
   var firebaseController
   var coordinates
   LocationUpdater.getCoordinates()
-  LocationUpdater.setCoordinateUpdater()
 })
