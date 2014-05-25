@@ -6,7 +6,7 @@ CookieController = {
     return document.cookie == ""
   },
   manageCookies: function(newCoordinates, radius) {
-    if (this.noCookie() || this.newLocation(newCoordinates, radius)){
+    if (this.noCookie() || this.newLocation(newCoordinates, radius*2)){
       CookieSetter.setCookie(newCoordinates, this.validDays())
     }
   },
