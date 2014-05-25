@@ -1,20 +1,20 @@
-var CookieSetter = function() {
-  this.expirationDays = 1
-  this.userCookie = document.cookie
-}
-
-CookieSetter.prototype = {
-  setLocationCookie: function() {
-    var cookieText = "{location:}"+'; expires='+this.expiration+"; path=''"
-    this.userCookie = cookieText
-  },
-  expiration: function() {
+CookieSetter = {
+  expirationDate: function(days) {
     var now = new Date()
-    var validPeriod = now.getDays()+this.expirationDays
-    var expirationDate = new Date(now.setDays(validPeriod)).toUTCString()
-    return expirationDate
+    var expirationDay = now.getDate()+days
+    var expiration = new Date(now.setDate(expirationDay)).toUTCString()
+    return expiration
   },
-  locationCookieText: function() {
-    return this.userCookie.split(';')[0]
+  cookieName: function() {
+    return 'sugarsnap'+('000'+Math.floor(Math.random()*99998 + 1)).slice(-5)
+  },
+  cookieText: function (coord, days) {
+    var cookieText = this.cookieName()+"="+coord.toString()+"; path=/; expires="+this.expirationDate(days)+";"
+    return cookieText
+  },
+  setCookie: function(coord, days) {
+    document.cookie = this.cookieText(coord, days)
   }
 }
+
+
