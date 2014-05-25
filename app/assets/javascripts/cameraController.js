@@ -4,8 +4,8 @@ function CameraController(view) {
 
 CameraController.prototype = {
   bindCameraListener: function() {
-    var submitPhotoButton = this.view.getFormSelector()
-    submitPhotoButton.on("submit", this.sendPhotoToServer.bind(this))
+    var photoForm = this.view.getFormSelector()
+    photoForm.on("submit", this.sendPhotoToServer.bind(this))
   },
   sendPhotoToServer: function(event) {
     event.preventDefault();
@@ -14,9 +14,11 @@ CameraController.prototype = {
     SpinnerModule.renderSpinnerAnimation();
     var xhr = new XMLHttpRequest()
     xhr.open(event.target.method, event.target.action, true);
+    debugger
     xhr.setRequestHeader("X-CSRF-Token", token);
     xhr.onload = function(response) {
       if (xhr.status === 200) {
+        console.log(response.target.responseText)
         var url = JSON.parse(response.target.responseText)
         FirebaseCommunicator.sendImageToFirebase(url["url"])
       } else {

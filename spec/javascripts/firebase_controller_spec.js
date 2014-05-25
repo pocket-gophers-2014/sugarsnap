@@ -1,18 +1,22 @@
 describe('FirebaseController', function() {
-  var view = new FirebaseView()
-  var geo = 0
-  var coordinates = 0
-  var testController = new FirebaseController(view,geo,coordinates)
+  var view;
+  var geo;
+  var coordinates;
+  var testController;
+  beforeEach(function() {
+    view = new FirebaseView()
+    geo = 0
+    coordinates = 0
+    testController = new FirebaseController(view,geo,coordinates)
+  })
   describe('init', function() {
     it('calls appendPhotosToFeed', function() {
-      // var testController = new FirebaseController
       spyOn(testController, 'appendPhotosToFeed')
       spyOn(testController, 'extractInitialPhotos')
       testController.init()
       expect(testController.appendPhotosToFeed).toHaveBeenCalled()
     })
     it('calls extractInitialPhotos', function() {
-      // var testController = new FirebaseController
       spyOn(testController, 'appendPhotosToFeed')
       spyOn(testController, 'extractInitialPhotos')
       testController.init()
