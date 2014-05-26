@@ -10,6 +10,7 @@ LocationUpdater = {
 		FirebaseCommunicator.getInitialPhotos(firebaseController)
 		FirebaseCommunicator.addAutomaticUpdate(firebaseController)
 		CookieController.manageCookies(coordinates, firebaseController.radius)
+
 		SubmissionModule.listenForFileUpload()
 	},
 	errors: function () {
