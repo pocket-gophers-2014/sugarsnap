@@ -133,7 +133,7 @@ footer {
 input[type="file"] {
   height: 100px;
   width: 100px;
-  opacity: 0;
+  opacity: .5;
   position: absolute;
   z-index: 1;
   bottom: 0px;
@@ -142,7 +142,7 @@ input[type="file"] {
   @media (min-width: 981px) {
     height: 100px;
     width: 100px;
-    opacity: 0;
+    opacity: .5;
     bottom: 0px;
     left: 47.7%;
     right: 47.7%;
@@ -157,9 +157,10 @@ input[type="file"] {
   border-radius: 10px;
   position: absolute;
   z-index: 0;
-  top: -23px;
+  top: 0px;
   left: 137px;
   margin-bottom: 3px;
+  margin-top: 3px;
 
   @media (min-width: 981px) {
     width: 90px;
@@ -170,46 +171,32 @@ input[type="file"] {
     left: 47.6%;
     right: 47.6%;
     margin-bottom: 3px;
+    margin-top: 3px;
   }
 }
-
-
-#camera_icon_left {
-  width: 42px;
-  height: 42px;
-  border: solid 2px black;
-  border-radius: 10px;
-  position: absolute;
-  z-index: 0;
-  top: -23px;
-  left: 94px;
-  margin-bottom: 3px;
-
-  @media (min-width: 981px) {
-    width: 90px;
-    height: 90px;
-    border: solid 2px black;
-    border-radius: 20px;
-    bottom: 0px;
-    left: 47.6%;
-    right: 47.6%;
-    margin-bottom: 3px;
-  }
-}
-
 
 
 #submit_photo {
   display: none;
-  opacity: 0;
+  opacity: .5;
   height: 100px;
   width: 100px;
   position: absolute;
   z-index: 1;
   bottom: 0px;
   left: 210px;
+  @media (min-width: 981px) {
+    left: 50%;
+    width: 90px;
+    height: 90px;
+    border: solid 2px;
+    padding: 8px;
+    top: 1px;
+    border-radius: 20px;
+    opacity: .5;
+    margin-left: 100px;
+  }
 }
-
 #cloud_icon {
   display: none;
   width: 36px;
@@ -219,16 +206,19 @@ input[type="file"] {
   position: absolute;
   padding: 3px;
   z-index: 0;
-  top: -23px;
+  top: 0px;
   left: 180px;
   margin-bottom: 3px;
+  margin-top: 3px;
   @media (min-width: 981px) {
+    left: 50%;
     width: 70px;
     height: 70px;
     border: solid 2px;
     padding: 8px;
-    top: -20px;
+    top: 0px;
     border-radius: 20px;
+    margin-left:100px;
   }
 }
 
