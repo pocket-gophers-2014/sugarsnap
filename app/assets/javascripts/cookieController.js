@@ -35,6 +35,3 @@ CookieController = {
     }
   }
 }
-
-// rabsax@comcast.net
-// chess123

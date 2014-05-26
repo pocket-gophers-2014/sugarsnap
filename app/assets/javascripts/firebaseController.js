@@ -3,20 +3,18 @@ function FirebaseController(view, geo, coordinates) {
   this.geo = geo;
   this.coordinates = coordinates;
   this.radius = 1;
-  this.photoArray = []
+  this.scrollPhotos = []
+
 }
 
 FirebaseController.prototype = {
   init: function(array) {
-    // console.log(array)
     var photos = this.extractInitialPhotos(array)
     this.appendPhotosToFeed(photos)
   },
   initInfiniteScroll: function(array) {
     var extraPhotos = this.extractInfinityPhotos(array)
-    this.photoArray = extraPhotos
-    // console.log(this.photoArray)
-    // this.prepareExtraPhotosForScrollEvent()
+    this.scrollPhotos = extraPhotos
   },
   extractInitialPhotos: function(array) {
     var initialPhotos = PhotoHandler.getFirstTenPhotos(array)
@@ -25,16 +23,13 @@ FirebaseController.prototype = {
   },
   extractInfinityPhotos: function(array) {
     var infinitePhotos = PhotoHandler.getCachedPhotos(array)
-    var photoUrls = PhotoHandler.extractPhotoUrls(infinitePhotos)
     return infinitePhotos;
   },
   prepareExtraPhotosForScrollEvent: function() {
-    // console.log(array);
-    // var extraScrollPhotos = array.slice(0,10)
-    // array.splice(0,10)
-    // console.log(extraScrollPhotos)
-    var extraScrollPhotos = this.photoArray.slice(0,10)
-    this.photoArray.splice(0,10)
+    PhotoHandler.sortByTimeCreated(this.scrollPhotos)
+    var extraScrollPhotos = this.scrollPhotos.slice(0,10)
+    this.scrollPhotos.splice(0,10)
+    PhotoHandler.extractPhotoUrls(extraScrollPhotos)
     this.appendPhotosToFeed(extraScrollPhotos)
   },
   updatePhotoStream: function(array) {
@@ -45,6 +40,18 @@ FirebaseController.prototype = {
   appendPhotosToFeed: function(photos) {
     for (var i = 0; i < photos.length; i++) {
       this.view.appendPhoto(photos[i])
+    }
+  },
+  addCookiePhotos: function(array) {
+    if (array.length > 0) {
+      var cookiePhotos = PhotoHandler.getCookiePhotos(array)
+      this.scrollPhotos = this.scrollPhotos.concat(cookiePhotos)
+    }
+  },
+  appendCookiePhoto: function(array) {
+    if (array.length > 0) {
+    var photoToAppend = PhotoHandler.getLatestPhoto(array)
+    this.scrollPhotos.push(photoToAppend)
     }
   }
 }
