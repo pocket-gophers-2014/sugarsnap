@@ -123,6 +123,9 @@ footer {
   margin: 0;
   padding: 0;
   text-align: center;
+  @media (min-width: 981px) {
+    height: 100px;
+  }
 }
 
 
@@ -219,6 +222,14 @@ input[type="file"] {
   top: -23px;
   left: 180px;
   margin-bottom: 3px;
+  @media (min-width: 981px) {
+    width: 70px;
+    height: 70px;
+    border: solid 2px;
+    padding: 8px;
+    top: -20px;
+    border-radius: 20px;
+  }
 }
 
 @media screen and (max-width: 540px) {}
