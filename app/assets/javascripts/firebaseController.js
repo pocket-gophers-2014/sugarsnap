@@ -13,22 +13,15 @@ FirebaseController.prototype = {
     this.appendPhotosToFeed(photos)
   },
   initInfiniteScroll: function(array) {
-    var extraPhotos = this.extractInfinityPhotos(array)
-    this.scrollPhotos = extraPhotos
+    this.scrollPhotos = PhotoHandler.getCachedPhotos(array)
   },
   extractInitialPhotos: function(array) {
     var initialPhotos = PhotoHandler.getFirstTenPhotos(array)
     var photoUrls = PhotoHandler.extractPhotoUrls(initialPhotos)
     return photoUrls;
   },
-  extractInfinityPhotos: function(array) {
-    var infinitePhotos = PhotoHandler.getCachedPhotos(array)
-    return infinitePhotos;
-  },
-  prepareExtraPhotosForScrollEvent: function() {
-    PhotoHandler.sortByTimeCreated(this.scrollPhotos)
-    var extraScrollPhotos = this.scrollPhotos.slice(0,10)
-    this.scrollPhotos.splice(0,10)
+  appendExtraPhotosOnScrollEvent: function() {
+    var extraScrollPhotos = PhotoHandler.getNextSetOfScrollPhotos(this.scrollPhotos)
     PhotoHandler.extractPhotoUrls(extraScrollPhotos)
     this.appendPhotosToFeed(extraScrollPhotos)
   },
@@ -50,8 +43,8 @@ FirebaseController.prototype = {
   },
   appendCookiePhoto: function(array) {
     if (array.length > 0) {
-    var photoToAppend = PhotoHandler.getLatestPhoto(array)
-    this.scrollPhotos.push(photoToAppend)
+      var photoToAppend = PhotoHandler.getLatestPhoto(array)
+      this.scrollPhotos.push(photoToAppend)
     }
   }
 }

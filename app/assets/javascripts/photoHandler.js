@@ -11,7 +11,7 @@ PhotoHandler = {
   },
   getCachedPhotos: function(photos) {
     var sortedPhotos = this.sortByTimeCreated(photos)
-    return sortedPhotos.slice(2,sortedPhotos.length)
+    return sortedPhotos.slice(11, sortedPhotos.length)
   },
   sortByTimeCreated: function(photos) {
     var sortedPhotos = photos.sort(function(a, b) {
@@ -27,4 +27,8 @@ PhotoHandler = {
     var sortedPhotos = this.sortByTimeCreated(photos)
     return sortedPhotos.slice(1,sortedPhotos.length)
   },
+  getNextSetOfScrollPhotos: function(photos) {
+    var sortedPhotos = this.sortByTimeCreated(photos)
+    return sortedPhotos.splice(0,10)
+  }
 }

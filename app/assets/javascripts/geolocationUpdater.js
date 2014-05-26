@@ -11,13 +11,13 @@ LocationUpdater = {
 		FirebaseCommunicator.addAutomaticUpdate(firebaseController)
 	  $(window).scroll(function() {
 	    if ($(window).scrollTop() >= ($(document).height() - 400) - $(window).height()) {
-	      firebaseController.prepareExtraPhotosForScrollEvent()
+	      firebaseController.appendExtraPhotosOnScrollEvent()
 	    }
 	  });
 		CookieController.manageCookies(coordinates, firebaseController.radius)
 		SubmissionModule.listenForFileUpload()
 	},
 	errors: function () {
-		// console.log('we are screwed')
-	},
+		alert("We're sorry, we couldn't find you!")
+	}
 }
