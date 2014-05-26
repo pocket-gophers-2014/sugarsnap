@@ -8,15 +8,12 @@ body {
 h1 {
   font-family: 'Miltonian Tattoo', cursive;
   font-size: 40px;
-  margin-top: -5px;
-  margin-bottom: 5px;
-  padding: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
   }
 
 header {
-  margin: none;
-  background: #85E085;
-  height: 50px;
   margin: none;
   padding: none;
   position: fixed;
@@ -25,10 +22,43 @@ header {
   width: 100%;
   display: block;
   clear: both;
+}
+
+#header {
+  margin: 0px;
+  background: #85E085;
+  height: 50px;
+  padding: none;
+  padding-bottom: 5px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: block;
   text-align: center;
 }
 
-
+p {
+  text-align: center;
+  font-family: 'Miltonian Tattoo', cursive;
+  margin: none;
+  text-align: center;
+  padding: none;
+  font-size: 14px;
+  @media (min-width: 411px) {
+    font-size: 14.3px;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5px;
+  }
+  @media (min-width: 887px) {
+    padding-top: 6px;
+    font-size: 15px;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 
 img {
@@ -41,6 +71,15 @@ img {
   }
 }
 
+#subheader {
+  margin: none;
+  margin-top: -16px;
+  padding: none;
+  background: #C8FFC8;
+  width: 100%;
+  height: 50px;
+  display: none;
+}
 
 .feed-container {
   text-align: center;
@@ -84,6 +123,9 @@ footer {
   margin: 0;
   padding: 0;
   text-align: center;
+  @media (min-width: 981px) {
+    height: 100px;
+  }
 }
 
 
@@ -180,6 +222,14 @@ input[type="file"] {
   top: -23px;
   left: 180px;
   margin-bottom: 3px;
+  @media (min-width: 981px) {
+    width: 70px;
+    height: 70px;
+    border: solid 2px;
+    padding: 8px;
+    top: -20px;
+    border-radius: 20px;
+  }
 }
 
 @media screen and (max-width: 540px) {}
