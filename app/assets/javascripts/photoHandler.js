@@ -27,4 +27,8 @@ PhotoHandler = {
     var sortedPhotos = this.sortByTimeCreated(photos)
     return sortedPhotos.slice(1,sortedPhotos.length)
   },
+  getNextSetOfScrollPhotos: function(photos) {
+    var sortedPhotos = this.sortByTimeCreated(photos)
+    return sortedPhotos.splice(0,10)
+  }
 }

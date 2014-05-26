@@ -21,9 +21,7 @@ FirebaseController.prototype = {
     return photoUrls;
   },
   appendExtraPhotosOnScrollEvent: function() {
-    PhotoHandler.sortByTimeCreated(this.scrollPhotos)
-    var extraScrollPhotos = this.scrollPhotos.splice(0,10)
-
+    var extraScrollPhotos = PhotoHandler.getNextSetOfScrollPhotos(this.scrollPhotos)
     PhotoHandler.extractPhotoUrls(extraScrollPhotos)
     this.appendPhotosToFeed(extraScrollPhotos)
   },
