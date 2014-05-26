@@ -41,8 +41,23 @@ p {
   text-align: center;
   font-family: 'Miltonian Tattoo', cursive;
   margin: none;
+  text-align: center;
   padding: none;
-  padding-top: 12px;
+  font-size: 14px;
+  @media (min-width: 411px) {
+    font-size: 14.3px;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5px;
+  }
+  @media (min-width: 887px) {
+    padding-top: 6px;
+    font-size: 15px;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 
