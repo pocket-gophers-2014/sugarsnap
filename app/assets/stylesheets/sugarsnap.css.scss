@@ -124,7 +124,7 @@ footer {
 input[type="file"] {
   height: 80px;
   width: 46px;
-  opacity: 0.5;
+  opacity: 0;
   position: absolute;
   z-index: 1;
   bottom: 0px;
@@ -178,7 +178,7 @@ input[type="file"] {
 
 #submit_photo {
   display: none;
-  opacity: .5;
+  opacity: 0;
   height: 46px;
   width: 48px;
   position: absolute;
