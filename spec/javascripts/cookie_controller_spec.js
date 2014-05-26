@@ -45,7 +45,8 @@ describe('CookieController', function () {
     expect(cookieController.userPreviousLocationCoordinates).toBeDefined();
   });
   it('returns all previous locations that do not overlap with the current area', function() {
-    spyOn(CookieGetter, 'getOldCookies').and.returnValue(['sugarsnap12345=37.7844234,-122.3970566'])
+    spyOn(cookieController, 'noCookie').and.returnValue(false)
+    spyOn(cookieGetter, 'getOldCookies').and.returnValue(['sugarsnap12345=37.7844234,-122.3970566'])
     expect(cookieController.userPreviousLocationCoordinates(newCoordinates,1)).toEqual([[37.7844234,-122.3970566]])
   });
   it('has a function manageCookies', function() {

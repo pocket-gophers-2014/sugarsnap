@@ -15,3 +15,10 @@ env:
   - secure: fxKyou7GlvjYQ4wVEfA1s8lIkQ2Tzu0+nEZijIt85ax0zuAKKCBFKP2ApoagiV+4Z+YwwvZbw9/iPSKlmhBAfhO7PmGGw/61niB+q8RHUlFKjUZaX5qaOLzXOfwNMUzoteCprrWWEwVaXaR/wf1L8mEWer8GYQm1kU1FNSpkgDg=
   - secure: LyA+oR9a/v2c3pIxqMwhGhZtsa5SZKhRtaXuKoCAZtAbXp9MheieNqbpnW5xl3l3X2z1cjss2Ljp4NbulFcygzD8QddUu5J63ZWtHwVFwX2si+LJniLsTGmiFpfzW6MV8t6pzOXY/ikJ1KrdtUOaXyQOb2/VC3wWGv5KtkiPnT8=
   - secure: DZ7GAOMj3JpdfWio4eQep1yHcsHqe/c2nkd4ldWCX+cFT00EmJlannBuCF9CuCja48SMhbivbtZoE2qX7otI3nqtd93Xyu3MsYzcfDmUguqHOCdYb8+Lk/SF0GEUMHqkbryzJ1YirV+4V6aTfBO6G+9dNUkCTVDMIJhCvCPBD2o=
+task :travis do
+  ["rspec spec", "rake jasmine:ci"].each do |cmd|
+    puts "Starting to run #{cmd}..."
+    system("export DISPLAY=:99.0 && bundle exec #{cmd}")
+    raise "#{cmd} failed!" unless $?.exitstatus == 0
+  end
+end
