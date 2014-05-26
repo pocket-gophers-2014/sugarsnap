@@ -15,15 +15,13 @@ SubmissionModule = {
           $('#submit_photo').css('display', 'inline');
           $('#cloud_icon').css('display', 'inline');
           $('#camera-icon').attr('id', 'camera_icon_left');
-          $('input[type="file"]').css('left', '21%');
-          $('input[type="file"]').css('right', '21%');
+          $('input[type="file"]').css('left', '40px');
           break;
         default:
           $('#submit_photo').css('display', 'none');
           $('#cloud_icon').css('display', 'none');
           $('#camera_icon_left').attr('id', 'camera-icon');
-          $('input[type="file"]').css('left', '38.5%');
-          $('input[type="file"]').css('right', '38.5%');
+          $('input[type="file"]').css('left', '110px');
           break;
       }
     }
@@ -31,8 +29,7 @@ SubmissionModule = {
       $('#submit_photo').css('display', 'none');
       $('#cloud_icon').css('display', 'none');
       $('#camera_icon_left').attr('id', 'camera-icon');
-      $('input[type="file"]').css('left', '38.5%');
-      $('input[type="file"]').css('right', '38.5%');
+      $('input[type="file"]').css('left', '110px');
     })
   }
 }

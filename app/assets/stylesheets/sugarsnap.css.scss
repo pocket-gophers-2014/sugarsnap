@@ -86,12 +86,11 @@ footer {
 input[type="file"] {
   height: 100px;
   width: 100px;
-  opacity: 0;
+  opacity: 0.5;
   position: absolute;
   z-index: 1;
   bottom: 0px;
-  left: 38.5%;
-  right: 38.5%;
+  left: 110px;
 
   @media (min-width: 981px) {
     height: 100px;
@@ -111,7 +110,7 @@ input[type="file"] {
   border-radius: 10px;
   position: absolute;
   z-index: 0;
-  top: -2px;
+  top: -22px;
   left: 137px;
   margin-bottom: 3px;
 
@@ -129,15 +128,14 @@ input[type="file"] {
 
 
 #camera_icon_left {
-  width: 90px;
-  height: 90px;
+  width: 42px;
+  height: 42px;
   border: solid 2px black;
-  border-radius: 20px;
+  border-radius: 10px;
   position: absolute;
   z-index: 0;
-  bottom: 0px;
-  left: 21%;
-  right: 21%;
+  top: -22px;
+  left: 94px;
   margin-bottom: 3px;
 
   @media (min-width: 981px) {
@@ -162,20 +160,20 @@ input[type="file"] {
   position: absolute;
   z-index: 1;
   bottom: 0px;
-  left: 55%;
+  left: 180px;
 }
 
 #cloud_icon {
   display: none;
-  width: 74px;
-  height: 74px;
+  width: 36px;
+  height: 36px;
   border: solid 2px black;
-  border-radius: 20px;
+  border-radius: 10px;
   position: absolute;
-  padding: 8px;
+  padding: 3px;
   z-index: 0;
-  bottom: 0px;
-  left: 55%;
+  top: -22px;
+  left: 180px;
   margin-bottom: 3px;
 }
 
