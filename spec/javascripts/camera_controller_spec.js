@@ -23,19 +23,24 @@ describe('CameraController', function() {
 
   describe("bindCameraListener", function() {
     beforeEach(function() {
-      $('body').append('<form><input type="submit"></form>')
-    })
+      $('body').append('<form><input type="submit" class="submit"></form>')
+    });
     afterEach(function() {
       $('form').remove()
-    })
-    it("calls its view.getFormSelector", function() {
+    });
+    it("calls its view's getFormSelector function", function() {
+      spyOn(cameraController.view, 'getFormSelector').and.returnValue($('form'))
+      cameraController.bindCameraListener()
+      expect(cameraController.view.getFormSelector).toHaveBeenCalled()
+    });
+    it("calls its sendPhotoToServer function", function() {
       spyOn(cameraController.view, 'getFormSelector').and.returnValue($('form'))
       spyOn(cameraController, 'sendPhotoToServer')
       cameraController.bindCameraListener()
-      var submit = $('form')
-      submit.click()
+      var submit = $('.submit')
+      submit.submit()
       expect(cameraController.sendPhotoToServer).toHaveBeenCalled()
-    })
+    });
   })
 
   describe("sendPhotoToServer", function() {
