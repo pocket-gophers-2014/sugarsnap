@@ -13,22 +13,17 @@ FirebaseController.prototype = {
     this.appendPhotosToFeed(photos)
   },
   initInfiniteScroll: function(array) {
-    var extraPhotos = this.extractInfinityPhotos(array)
-    this.scrollPhotos = extraPhotos
+    this.scrollPhotos = PhotoHandler.getCachedPhotos(array)
   },
   extractInitialPhotos: function(array) {
     var initialPhotos = PhotoHandler.getFirstTenPhotos(array)
     var photoUrls = PhotoHandler.extractPhotoUrls(initialPhotos)
     return photoUrls;
   },
-  extractInfinityPhotos: function(array) {
-    var infinitePhotos = PhotoHandler.getCachedPhotos(array)
-    return infinitePhotos;
-  },
-  prepareExtraPhotosForScrollEvent: function() {
+  appendExtraPhotosOnScrollEvent: function() {
     PhotoHandler.sortByTimeCreated(this.scrollPhotos)
-    var extraScrollPhotos = this.scrollPhotos.slice(0,10)
-    this.scrollPhotos.splice(0,10)
+    var extraScrollPhotos = this.scrollPhotos.splice(0,10)
+
     PhotoHandler.extractPhotoUrls(extraScrollPhotos)
     this.appendPhotosToFeed(extraScrollPhotos)
   },

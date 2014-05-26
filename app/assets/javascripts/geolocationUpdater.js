@@ -11,7 +11,7 @@ LocationUpdater = {
 		FirebaseCommunicator.addAutomaticUpdate(firebaseController)
 	  $(window).scroll(function() {
 	    if ($(window).scrollTop() >= ($(document).height() - 400) - $(window).height()) {
-	      firebaseController.prepareExtraPhotosForScrollEvent()
+	      firebaseController.appendExtraPhotosOnScrollEvent()
 	    }
 	  });
 		CookieController.manageCookies(coordinates, firebaseController.radius)
