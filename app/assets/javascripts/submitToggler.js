@@ -15,7 +15,7 @@ SubmissionModule = {
           $('#submit_photo').css('display', 'inline');
           $('#cloud_icon').css('display', 'inline');
           $('#camera-icon').attr('id', 'camera_icon_left');
-          $('input[type="file"]').css('left', '40px');
+          $('input[type="file"]').css('left', '70px');
           break;
         default:
           $('#submit_photo').css('display', 'none');
