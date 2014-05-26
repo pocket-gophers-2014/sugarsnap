@@ -9,8 +9,14 @@ LocationUpdater = {
 		var firebaseController = new FirebaseController(new FirebaseView(),FirebaseConnection.getGeo(), coordinates)
 		FirebaseCommunicator.getInitialPhotos(firebaseController)
 		FirebaseCommunicator.addAutomaticUpdate(firebaseController)
-		CookieController.manageCookies(coordinates, firebaseController.radius)
 
+	  $(window).scroll(function() {
+	    if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+	      console.log('made it')
+	      FirebaseCommunicator.getNextSetOfScrollerPhotos(firebaseController)
+	    }
+	  });
+		CookieController.manageCookies(coordinates, firebaseController.radius)
 		SubmissionModule.listenForFileUpload()
 	},
 	errors: function () {

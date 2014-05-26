@@ -4,6 +4,7 @@ var FirebaseCommunicator = {
       controller.init(array);
       FirebaseCommunicator.addCookieFeed(controller)
       FirebaseCommunicator.setupCookieListener(controller)
+      controller.initInfiniteScroll(array);
     })
   },
   addAutomaticUpdate: function(controller) {
@@ -34,6 +35,10 @@ var FirebaseCommunicator = {
     var oldCoordinates = CookieController.userPreviousLocationCoordinates(controller.coordinates,controller.radius)
     for (var i = 0; i < oldCoordinates.length; i++) {
       controller.geo.getPointsNearLoc(oldCoordinates[i],controller.radius, function(array){controller.appendCookiePhoto(array)})
-    }
+    },
+  getNextSetOfScrollerPhotos: function(controller) {
+    // THIS NOW JUST NEEDS TO REFERENCE THE ARRAY FROM
+    controller.prepareExtraPhotosForScrollEvent()
+
   }
 }
