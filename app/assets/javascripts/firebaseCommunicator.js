@@ -21,13 +21,9 @@ var FirebaseCommunicator = {
     geo.insertByLoc(userPosition, photoObject)
   },
   addCookieFeed: function(controller) {
-    console.log(controller)
      var oldCoordinates = CookieController.userPreviousLocationCoordinates(controller.coordinates,controller.radius)
-     console.log(oldCoordinates)
     for (var i = 0; i < oldCoordinates.length; i++) {
-      console.log(oldCoordinates[i])
       controller.geo.getPointsNearLoc(oldCoordinates[i],controller.radius, function(array){
-        console.log("yay firebase")
         controller.addCookiePhotos(array)})
     }
   },
@@ -35,10 +31,6 @@ var FirebaseCommunicator = {
     var oldCoordinates = CookieController.userPreviousLocationCoordinates(controller.coordinates,controller.radius)
     for (var i = 0; i < oldCoordinates.length; i++) {
       controller.geo.getPointsNearLoc(oldCoordinates[i],controller.radius, function(array){controller.appendCookiePhoto(array)})
-    },
-  getNextSetOfScrollerPhotos: function(controller) {
-    // THIS NOW JUST NEEDS TO REFERENCE THE ARRAY FROM
-    controller.prepareExtraPhotosForScrollEvent()
-
+    }
   }
 }
