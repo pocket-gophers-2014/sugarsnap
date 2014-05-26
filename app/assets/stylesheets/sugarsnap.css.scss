@@ -133,7 +133,7 @@ footer {
 input[type="file"] {
   height: 100px;
   width: 100px;
-  opacity: .5;
+  opacity: 0;
   position: absolute;
   z-index: 1;
   bottom: 0px;
@@ -142,7 +142,7 @@ input[type="file"] {
   @media (min-width: 981px) {
     height: 100px;
     width: 100px;
-    opacity: .5;
+    opacity: 0;
     bottom: 0px;
     left: 47.7%;
     right: 47.7%;
@@ -178,7 +178,7 @@ input[type="file"] {
 
 #submit_photo {
   display: none;
-  opacity: .5;
+  opacity: 0;
   height: 100px;
   width: 100px;
   position: absolute;
@@ -193,7 +193,7 @@ input[type="file"] {
     padding: 8px;
     top: 1px;
     border-radius: 20px;
-    opacity: .5;
+    opacity: 0;
     margin-left: 100px;
   }
 }
