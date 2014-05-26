@@ -7,8 +7,8 @@ body {
 
 h1 {
   font-family: 'Miltonian Tattoo', cursive;
-  font-size: 55px;
-  margin-top: 12px;
+  font-size: 40px;
+  margin-top: -5px;
   margin-bottom: 5px;
   padding: none;
   }
@@ -16,7 +16,7 @@ h1 {
 header {
   margin: none;
   background: #85E085;
-  height: 110px;
+  height: 50px;
   margin: none;
   padding: none;
   position: fixed;
@@ -73,7 +73,7 @@ footer {
   position: fixed;
   left: 0px;
   bottom: 0px;
-  height: 100px;
+  height: 50px;
   width: 100%;
   background: #85E085;
   margin: 0;
@@ -86,7 +86,7 @@ footer {
 input[type="file"] {
   height: 100px;
   width: 100px;
-  opacity: 0;
+  opacity: 0.5;
   position: absolute;
   z-index: 1;
   bottom: 0px;
@@ -105,15 +105,14 @@ input[type="file"] {
 
 
 #camera-icon {
-  width: 90px;
-  height: 90px;
+  width: 42px;
+  height: 42px;
   border: solid 2px black;
-  border-radius: 20px;
+  border-radius: 10px;
   position: absolute;
   z-index: 0;
-  bottom: 0px;
-  left: 38%;
-  right: 38%;
+  top: -2px;
+  left: 137px;
   margin-bottom: 3px;
 
   @media (min-width: 981px) {
@@ -157,7 +156,7 @@ input[type="file"] {
 
 #submit_photo {
   display: none;
-  opacity: 0;
+  opacity: 0.5;
   height: 100px;
   width: 100px;
   position: absolute;
