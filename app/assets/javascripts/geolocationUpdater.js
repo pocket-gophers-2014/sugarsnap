@@ -10,7 +10,7 @@ LocationUpdater = {
 		FirebaseCommunicator.getInitialPhotos(firebaseController)
 		FirebaseCommunicator.addAutomaticUpdate(firebaseController)
 	  $(window).scroll(function() {
-	    if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+	    if ($(window).scrollTop() >= ($(document).height() - 400) - $(window).height()) {
 	      firebaseController.prepareExtraPhotosForScrollEvent()
 	    }
 	  });
