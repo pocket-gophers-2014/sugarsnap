@@ -1,12 +1,17 @@
 language: ruby
 cache: bundler
 rvm:
-  - 2.0.0
-
+- 2.0.0
 before_script:
-  - cp config/database.travis.yml config/database.yml
-  - psql -c 'create database sugarsnap_test;' -U postgres
-  - bundle exec rake db:migrate --trace
-  - bundle exec rake db:test:prepare --trace
+- cp config/database.travis.yml config/database.yml
+- psql -c 'create database sugarsnap_test;' -U postgres
+- bundle exec rake db:migrate --trace
+- bundle exec rake db:test:prepare --trace
 script:
-  - RAILS_ENV=test bundle exec rake spec
+- RAILS_ENV=test bundle exec rake spec
+env:
+  global:
+  - secure: ht9S8Wbs0oLYbEo6S73bVBej4bJVng2+6xxRQEzQrWOqrOJLdpU6rrDYXQOsnrDTo6YsdNg6DtSj87Z4d+F1NMGcEm4yIfqdl0ZnqcoggTn1HkWns1TkSbpAeXFgd+qQqjFLTHpSIsacXskG+9I7ukkWz+F239j5+CEzMzwI5LI=
+  - secure: fxKyou7GlvjYQ4wVEfA1s8lIkQ2Tzu0+nEZijIt85ax0zuAKKCBFKP2ApoagiV+4Z+YwwvZbw9/iPSKlmhBAfhO7PmGGw/61niB+q8RHUlFKjUZaX5qaOLzXOfwNMUzoteCprrWWEwVaXaR/wf1L8mEWer8GYQm1kU1FNSpkgDg=
+  - secure: LyA+oR9a/v2c3pIxqMwhGhZtsa5SZKhRtaXuKoCAZtAbXp9MheieNqbpnW5xl3l3X2z1cjss2Ljp4NbulFcygzD8QddUu5J63ZWtHwVFwX2si+LJniLsTGmiFpfzW6MV8t6pzOXY/ikJ1KrdtUOaXyQOb2/VC3wWGv5KtkiPnT8=
+  - secure: DZ7GAOMj3JpdfWio4eQep1yHcsHqe/c2nkd4ldWCX+cFT00EmJlannBuCF9CuCja48SMhbivbtZoE2qX7otI3nqtd93Xyu3MsYzcfDmUguqHOCdYb8+Lk/SF0GEUMHqkbryzJ1YirV+4V6aTfBO6G+9dNUkCTVDMIJhCvCPBD2o=

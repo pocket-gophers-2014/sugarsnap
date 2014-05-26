@@ -26,7 +26,7 @@ end
 
 gem 'jquery-rails'
 gem 'jasmine-jquery-rails'
-
+gem 'travis'
 
 #Fix for heroku deprecating warning on-compile
 gem 'rails_12factor'
