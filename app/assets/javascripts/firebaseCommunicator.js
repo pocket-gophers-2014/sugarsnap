@@ -2,6 +2,7 @@ var FirebaseCommunicator = {
   getInitialPhotos: function(controller) {
     controller.geo.getPointsNearLoc(controller.coordinates, controller.radius, function(array) {
       controller.init(array);
+      controller.initInfiniteScroll(array);
     })
   },
   addAutomaticUpdate: function(controller) {
@@ -16,5 +17,9 @@ var FirebaseCommunicator = {
     var userPosition = coordinates
     photoObject = { photoUrl: url, createdAt: timeStamp }
     geo.insertByLoc(userPosition, photoObject)
+  },
+  getNextSetOfScrollerPhotos: function(controller) {
+    // THIS NOW JUST NEEDS TO REFERENCE THE ARRAY FROM
+    controller.prepareExtraPhotosForScrollEvent()
   }
 }
