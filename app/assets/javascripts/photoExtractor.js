@@ -9,6 +9,10 @@ PhotoHandler = {
     var sortedPhotos = this.sortByTimeCreated(photos)
     return sortedPhotos.slice(1,10)
   },
+  getCachedPhotos: function(photos) {
+    var sortedPhotos = this.sortByTimeCreated(photos)
+    return sortedPhotos.slice(2,sortedPhotos.length)
+  },
   sortByTimeCreated: function(photos) {
     var sortedPhotos = photos.sort(function(a, b) {
       return b.createdAt - a.createdAt
@@ -18,5 +22,9 @@ PhotoHandler = {
   getLatestPhoto: function(photos) {
     var sortedPhotos = this.sortByTimeCreated(photos)
     return sortedPhotos.shift()
-  }
+  },
+  getCookiePhotos: function(photos) {
+    var sortedPhotos = this.sortByTimeCreated(photos)
+    return sortedPhotos.slice(1,sortedPhotos.length)
+  },
 }

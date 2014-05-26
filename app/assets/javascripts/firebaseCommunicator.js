@@ -2,6 +2,9 @@ var FirebaseCommunicator = {
   getInitialPhotos: function(controller) {
     controller.geo.getPointsNearLoc(controller.coordinates, controller.radius, function(array) {
       controller.init(array);
+      FirebaseCommunicator.addCookieFeed(controller)
+      FirebaseCommunicator.setupCookieListener(controller)
+      controller.initInfiniteScroll(array);
     })
   },
   addAutomaticUpdate: function(controller) {
@@ -16,5 +19,18 @@ var FirebaseCommunicator = {
     var userPosition = coordinates
     photoObject = { photoUrl: url, createdAt: timeStamp }
     geo.insertByLoc(userPosition, photoObject)
+  },
+  addCookieFeed: function(controller) {
+     var oldCoordinates = CookieController.userPreviousLocationCoordinates(controller.coordinates,controller.radius)
+    for (var i = 0; i < oldCoordinates.length; i++) {
+      controller.geo.getPointsNearLoc(oldCoordinates[i],controller.radius, function(array){
+        controller.addCookiePhotos(array)})
+    }
+  },
+  setupCookieListener: function(controller) {
+    var oldCoordinates = CookieController.userPreviousLocationCoordinates(controller.coordinates,controller.radius)
+    for (var i = 0; i < oldCoordinates.length; i++) {
+      controller.geo.getPointsNearLoc(oldCoordinates[i],controller.radius, function(array){controller.appendCookiePhoto(array)})
+    }
   }
 }

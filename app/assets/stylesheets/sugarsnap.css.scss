@@ -35,7 +35,10 @@ img {
   height: 320px;
   width: 320px;
   text-align: center;
-  margin: 0px;
+  margin: 5px 0px;
+  @media (min-width: 450px) {
+    margin: 25px;
+  }
 }
 
 
@@ -56,6 +59,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  max-width: 1000px;
 }
 
 
@@ -64,6 +68,7 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1000px;
 }
 
 

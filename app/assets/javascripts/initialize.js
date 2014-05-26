@@ -4,3 +4,4 @@ $(document).ready(function() {
   var coordinates = []
   LocationUpdater.getCoordinates()
 })
+
