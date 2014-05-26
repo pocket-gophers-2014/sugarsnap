@@ -5,6 +5,7 @@ function CameraController(view) {
 CameraController.prototype = {
   bindCameraListener: function() {
     var photoForm = this.view.getFormSelector()
+    console.log(photoForm)
     photoForm.on("submit", this.sendPhotoToServer.bind(this))
   },
   sendPhotoToServer: function(event) {

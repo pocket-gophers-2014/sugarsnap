@@ -21,6 +21,23 @@ describe('CameraController', function() {
     expect(cameraController.sendPhotoToServer).toBeDefined();
   });
 
+  describe("bindCameraListener", function() {
+    beforeEach(function() {
+      $('body').append('<form><input type="submit"></form>')
+    })
+    afterEach(function() {
+      $('form').remove()
+    })
+    it("calls its view.getFormSelector", function() {
+      spyOn(cameraController.view, 'getFormSelector').and.returnValue($('form'))
+      spyOn(cameraController, 'sendPhotoToServer')
+      cameraController.bindCameraListener()
+      var submit = $('form')
+      submit.click()
+      expect(cameraController.sendPhotoToServer).toHaveBeenCalled()
+    })
+  })
+
   describe("sendPhotoToServer", function() {
     beforeEach(function(){
       jasmine.Ajax.install();
@@ -58,20 +75,4 @@ describe('CameraController', function() {
       expect(doneFn).toHaveBeenCalledWith('{"url":"http://s3-us-west-1.amazonaws.com/sugarsnapper/photos/images/000/000/001/medium/awesome.jpg"}');
     })
   })
-
-
-  // describe("bindCameraListener", function() {
-  //   beforeEach(function() {
-  //     // jasmine.getFixtures().load('camera_form')
-  //     debugger
-  //     var hey = loadFixtures('camera.html')
-  //     debugger
-
-  //   })
-  //   it("calls", function() {
-  //     spyOn(cameraController.view, "getFormSelector");
-  //     cameraController.bindCameraListener();
-  //     expect(cameraController.view.getFormSelector).toHaveBeenCalled()
-  //   });
-  // })
 })
