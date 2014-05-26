@@ -12,7 +12,7 @@ LocationUpdater = {
 
 
 	  $(window).scroll(function() {
-	    if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+	    if ($(window).scrollTop() >= ($(document).height() - 400) - $(window).height()) {
 	      console.log('made it')
 	      FirebaseCommunicator.getNextSetOfScrollerPhotos(firebaseController)
 	    }
