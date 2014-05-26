@@ -13,7 +13,7 @@ h1 {
   padding: none;
   }
 
-header {
+#header {
   margin: none;
   background: #85E085;
   height: 50px;
@@ -28,7 +28,9 @@ header {
   text-align: center;
 }
 
-
+p {
+  text-align: center;
+}
 
 
 img {
@@ -41,6 +43,15 @@ img {
   }
 }
 
+#subheader {
+  margin: none;
+  padding: none;
+  margin-top: 50px;
+  background: #C8FFC8;
+  width: 100%;
+  height: 50px;
+  display: none;
+}
 
 .feed-container {
   text-align: center;
