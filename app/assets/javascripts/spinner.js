@@ -5,5 +5,10 @@ SpinnerModule = {
     img.removeClass('hidden')
     img.attr('id', 'waiting')
     template.prepend(img.attr('src', 'spinner.gif'))
+  },
+  removeSpinnerAnimation: function() {
+    if ($('#waiting')) {
+      $('#waiting').remove()
+    }
   }
 }

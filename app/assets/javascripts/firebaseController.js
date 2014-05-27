@@ -27,7 +27,7 @@ FirebaseController.prototype = {
   },
   updatePhotoStream: function(array) {
     var photoToAppend = PhotoHandler.getLatestPhoto(array)
-    this.view.removePendingLoadAnimation()
+    SpinnerModule.removeSpinnerAnimation()
     this.view.prependNewPhoto(photoToAppend.photoUrl)
   },
   appendPhotosToFeed: function(photos) {
