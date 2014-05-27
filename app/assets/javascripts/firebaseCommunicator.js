@@ -2,8 +2,8 @@ var FirebaseCommunicator = {
   getInitialPhotos: function(controller) {
     controller.geo.getPointsNearLoc(controller.coordinates, controller.radius, function(array) {
       controller.init(array);
-      FirebaseCommunicator.addCookieFeed(controller)
-      FirebaseCommunicator.setupCookieListener(controller)
+      FirebaseCommunicator.setupCookieListenerAndAddCookieFeed(controller)
+      // FirebaseCommunicator.setupCookieListener(controller)
       controller.initInfiniteScroll(array);
     })
   },
@@ -20,17 +20,19 @@ var FirebaseCommunicator = {
     photoObject = { photoUrl: url, createdAt: timeStamp }
     geo.insertByLoc(userPosition, photoObject)
   },
-  addCookieFeed: function(controller) {
+  setupCookieListenerAndAddCookieFeed: function(controller) {
      var oldCoordinates = CookieController.userPreviousLocationCoordinates(controller.coordinates,controller.radius)
     for (var i = 0; i < oldCoordinates.length; i++) {
-      controller.geo.getPointsNearLoc(oldCoordinates[i],controller.radius, function(array){
-        controller.addCookiePhotos(array)})
+      controller.geo.getPointsNearLoc(oldCoordinates[i],controller.radius, function(array) {
+        controller.addCookiePhotos(array)
+        controller.appendCookiePhoto(array)
+      })
     }
-  },
-  setupCookieListener: function(controller) {
-    var oldCoordinates = CookieController.userPreviousLocationCoordinates(controller.coordinates,controller.radius)
-    for (var i = 0; i < oldCoordinates.length; i++) {
-      controller.geo.getPointsNearLoc(oldCoordinates[i],controller.radius, function(array){controller.appendCookiePhoto(array)})
-    }
-  }
+  }//,
+  // setupCookieListener: function(controller) {
+  //   var oldCoordinates = CookieController.userPreviousLocationCoordinates(controller.coordinates,controller.radius)
+  //   for (var i = 0; i < oldCoordinates.length; i++) {
+  //     controller.geo.getPointsNearLoc(oldCoordinates[i],controller.radius, function(array){})
+  //   }
+  // }
 }

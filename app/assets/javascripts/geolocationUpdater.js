@@ -18,6 +18,6 @@ LocationUpdater = {
 		SubmissionModule.listenForFileUpload()
 	},
 	errors: function () {
-		// console.log('we are screwed')
-	},
+		alert("We couldn't find you! We'll keep searching..")
+	}
 }

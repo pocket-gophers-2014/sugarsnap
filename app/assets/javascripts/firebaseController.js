@@ -43,8 +43,8 @@ FirebaseController.prototype = {
   },
   appendCookiePhoto: function(array) {
     if (array.length > 0) {
-    var photoToAppend = PhotoHandler.getLatestPhoto(array)
-    this.scrollPhotos.push(photoToAppend)
+      var photoToAppend = PhotoHandler.getLatestPhoto(array)
+      this.scrollPhotos.push(photoToAppend)
     }
   }
 }
