@@ -1,7 +1,7 @@
 $(document).ready(function() {
   new CameraController(new CameraView()).bindCameraListener()
   // global var
-  var coordinates = []
+  var gCoordinates = []
   LocationUpdater.getCoordinates()
   var header = document.getElementById("header");
   header.addEventListener('click', toggleSubheaderDisplay, false);

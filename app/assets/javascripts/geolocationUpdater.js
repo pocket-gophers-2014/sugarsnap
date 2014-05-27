@@ -5,12 +5,12 @@ LocationUpdater = {
 	initializeFeed: function (posObject) {
 		var coordinateObject = posObject.coords
 		// sets global var
-		coordinates = [coordinateObject.latitude,coordinateObject.longitude]
-		var firebaseController = new FirebaseController(new FirebaseView(),FirebaseConnection.getGeo(), coordinates)
+		gCoordinates = [coordinateObject.latitude,coordinateObject.longitude]
+		var firebaseController = new FirebaseController(new FirebaseView(),FirebaseConnection.getGeo(), gCoordinates)
 		FirebaseCommunicator.getInitialPhotos(firebaseController)
 		FirebaseCommunicator.addAutomaticUpdate(firebaseController)
 		ScrollListener.checkScrollThreshold(firebaseController)
-		CookieController.manageCookies(coordinates, firebaseController.radius)
+		CookieController.manageCookies(gCoordinates, firebaseController.radius)
 		SubmissionModule.listenForFileUpload()
 	},
 	errors: function () {

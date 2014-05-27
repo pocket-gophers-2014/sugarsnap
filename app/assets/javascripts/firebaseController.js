@@ -1,7 +1,7 @@
-function FirebaseController(view, geo, coordinates) {
+function FirebaseController(view, geo, userCoordinates) {
   this.view = view;
   this.geo = geo;
-  this.coordinates = coordinates;
+  this.coordinates = userCoordinates;
   this.radius = 1;
   this.scrollPhotos = []
 

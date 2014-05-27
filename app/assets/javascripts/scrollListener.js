@@ -12,6 +12,4 @@ var ScrollListener = (function() {
       _informControllerOfScrollPosition(controller)
     }
   }
-
-
 })();
