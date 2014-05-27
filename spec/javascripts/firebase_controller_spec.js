@@ -35,11 +35,11 @@ describe('FirebaseController', function() {
   it('has a function appendPhotosToFeed defined', function() {
     expect(testFirebaseController.appendPhotosToFeed).toBeDefined()
   });
-  it('has a function addCookiePhotos defined', function() {
-    expect(testFirebaseController.addCookiePhotos).toBeDefined()
+  it('has a function addPhotosFromCookieLocations defined', function() {
+    expect(testFirebaseController.addPhotosFromCookieLocations).toBeDefined()
   });
-  it('has a function appendCookiePhoto defined', function() {
-    expect(testFirebaseController.appendCookiePhoto).toBeDefined()
+  it('has a function appendPhotoFromCookieLocation defined', function() {
+    expect(testFirebaseController.appendPhotoFromCookieLocation).toBeDefined()
   });
   describe('init', function() {
     it('calls appendPhotosToFeed', function() {
@@ -137,56 +137,56 @@ describe('FirebaseController', function() {
       expect(testFirebaseController.view.appendPhoto).toHaveBeenCalled()
     });
   });
-  describe('addCookiePhotos', function() {
+  describe('addPhotosFromCookieLocations', function() {
     it('calls PhotoHandler.getCookiePhotos', function() {
       spyOn(PhotoHandler, 'getCookiePhotos')
       spyOn(testFirebaseController.scrollPhotos, 'concat')
-      testFirebaseController.addCookiePhotos(testArray)
+      testFirebaseController.addPhotosFromCookieLocations(testArray)
       expect(PhotoHandler.getCookiePhotos).toHaveBeenCalled()
     });
     it('calls concat to change testFirebaseController.scrollPhotos', function() {
       spyOn(PhotoHandler, 'getCookiePhotos')
       spyOn(testFirebaseController.scrollPhotos, 'concat').and.returnValue(testArray)
-      testFirebaseController.addCookiePhotos(testArray)
+      testFirebaseController.addPhotosFromCookieLocations(testArray)
       expect(testFirebaseController.scrollPhotos).toEqual(testArray)
     });
     it('does not call PhotoHandler.getCookiePhotos if argument array is empty', function() {
       spyOn(PhotoHandler, 'getCookiePhotos')
       spyOn(testFirebaseController.scrollPhotos, 'concat')
-      testFirebaseController.addCookiePhotos(emptyTestArray)
+      testFirebaseController.addPhotosFromCookieLocations(emptyTestArray)
       expect(PhotoHandler.getCookiePhotos).not.toHaveBeenCalled()
     });
     it('does not call concat to change testFirebaseController.scrollPhotos if argument array is empty', function() {
       spyOn(PhotoHandler, 'getCookiePhotos')
       spyOn(testFirebaseController.scrollPhotos, 'concat')
-      testFirebaseController.addCookiePhotos(emptyTestArray)
+      testFirebaseController.addPhotosFromCookieLocations(emptyTestArray)
       expect(testFirebaseController.scrollPhotos.concat).not.toHaveBeenCalled()
     });
   });
-  describe('appendCookiePhoto', function() {
+  describe('appendPhotoFromCookieLocation', function() {
     it('calls PhotoHandler.getLatestPhoto', function() {
       spyOn(PhotoHandler, 'getLatestPhoto')
       spyOn(testFirebaseController.scrollPhotos, 'push')
-      testFirebaseController.appendCookiePhoto(testArray)
+      testFirebaseController.appendPhotoFromCookieLocation(testArray)
       expect(PhotoHandler.getLatestPhoto).toHaveBeenCalled()
     });
     it('calls push to change testFirebaseController.scrollPhotos', function() {
       spyOn(PhotoHandler, 'getLatestPhoto').and.returnValue(testPhotoObject)
       var pushedArray = testArray.concat(testPhotoObject)
       testFirebaseController.scrollPhotos = testArray
-      testFirebaseController.appendCookiePhoto(testArray)
+      testFirebaseController.appendPhotoFromCookieLocation(testArray)
       expect(testFirebaseController.scrollPhotos).toEqual(pushedArray)
     });
     it('does not call PhotoHandler.getLatestPhoto if argument array is empty', function() {
       spyOn(PhotoHandler, 'getLatestPhoto')
       spyOn(testFirebaseController.scrollPhotos, 'push')
-      testFirebaseController.appendCookiePhoto(emptyTestArray)
+      testFirebaseController.appendPhotoFromCookieLocation(emptyTestArray)
       expect(PhotoHandler.getLatestPhoto).not.toHaveBeenCalled()
     });
     it('does not call push to change testFirebaseController.scrollPhotos if argument array is empty', function() {
       spyOn(PhotoHandler, 'getLatestPhoto')
       spyOn(testFirebaseController.scrollPhotos, 'push')
-      testFirebaseController.appendCookiePhoto(emptyTestArray)
+      testFirebaseController.appendPhotoFromCookieLocation(emptyTestArray)
       expect(testFirebaseController.scrollPhotos.push).not.toHaveBeenCalled()
     });
   });

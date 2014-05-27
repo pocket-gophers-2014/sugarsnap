@@ -6,7 +6,7 @@ var FirebaseCommunicator = {
       controller.initInfiniteScroll(array);
     })
   },
-  addAutomaticUpdate: function(controller) {
+  addAutomaticUpdateToUserCoordinates: function(controller) {
     controller.geo.onPointsNearLoc(controller.coordinates, controller.radius, function(array) {
       controller.updatePhotoStream(array);
     })
@@ -20,11 +20,11 @@ var FirebaseCommunicator = {
     geo.insertByLoc(userPosition, photoObject)
   },
   setupCookieListenerAndAddCookieFeed: function(controller) {
-     var oldCoordinates = CookieController.userPreviousLocationCoordinates(controller.coordinates,controller.radius)
+    var oldCoordinates = CookieController.userPreviousLocationCoordinates(controller.coordinates,controller.radius)
     for (var i = 0; i < oldCoordinates.length; i++) {
       controller.geo.getPointsNearLoc(oldCoordinates[i],controller.radius, function(array) {
-        controller.addCookiePhotos(array)
-        controller.appendCookiePhoto(array)
+        controller.addPhotosFromCookieLocations(array)
+        controller.appendPhotoFromCookieLocation(array)
       })
     }
   }
