@@ -14,22 +14,16 @@ SubmissionModule = {
         case 'GIF':
           $('#submit_photo').css('display', 'inline');
           $('#cloud_icon').css('display', 'inline');
-          $('#camera-icon').attr('id', 'camera_icon_left');
-          $('input[type="file"]').css('left', '70px');
           break;
         default:
           $('#submit_photo').css('display', 'none');
           $('#cloud_icon').css('display', 'none');
-          $('#camera_icon_left').attr('id', 'camera-icon');
-          $('input[type="file"]').css('left', '110px');
           break;
       }
     }
     $('#submit_photo').click(function() {
       $('#submit_photo').css('display', 'none');
       $('#cloud_icon').css('display', 'none');
-      $('#camera_icon_left').attr('id', 'camera-icon');
-      $('input[type="file"]').css('left', '110px');
     })
   }
 }
