@@ -18,10 +18,5 @@ FirebaseView.prototype = {
     $photo.attr('src', photoUrl)
     $photo.removeClass('hidden')
     return $photo
-  },
-  removePendingLoadAnimation: function() {
-    if($(this.waiting)) {
-      $(this.waiting).remove()
-    }
   }
 }

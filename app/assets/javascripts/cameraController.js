@@ -17,11 +17,12 @@ CameraController.prototype = {
     xhr.setRequestHeader("X-CSRF-Token", token);
     xhr.onload = function(response) {
       if (xhr.status === 200) {
-        // console.log(response.target.responseText)
         var url = JSON.parse(response.target.responseText)
         FirebaseCommunicator.sendImageToFirebase(url["url"])
       } else if (xhr.status === 422 || xhr.status === 500){
-        console.log(response) //need to remove spinner, give error message
+        SpinnerModule.removeSpinnerAnimation()
+        var errorHolder = JSON.parse(response.target.responseText)
+        alert(errorHolder["errors"])
       }
     };
     xhr.send(formData);

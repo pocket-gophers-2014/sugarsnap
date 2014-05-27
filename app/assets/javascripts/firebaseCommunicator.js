@@ -3,11 +3,10 @@ var FirebaseCommunicator = {
     controller.geo.getPointsNearLoc(controller.coordinates, controller.radius, function(array) {
       controller.init(array);
       FirebaseCommunicator.setupCookieListenerAndAddCookieFeed(controller)
-      // FirebaseCommunicator.setupCookieListener(controller)
       controller.initInfiniteScroll(array);
     })
   },
-  addAutomaticUpdate: function(controller) {
+  addAutomaticUpdateToUserCoordinates: function(controller) {
     controller.geo.onPointsNearLoc(controller.coordinates, controller.radius, function(array) {
       controller.updatePhotoStream(array);
     })
@@ -16,23 +15,17 @@ var FirebaseCommunicator = {
     var geo = FirebaseConnection.getGeo()
     var timeStamp = Date.now()
     //uses global var (will break function if called instantly)
-    var userPosition = coordinates
+    var userPosition = gCoordinates
     photoObject = { photoUrl: url, createdAt: timeStamp }
     geo.insertByLoc(userPosition, photoObject)
   },
   setupCookieListenerAndAddCookieFeed: function(controller) {
-     var oldCoordinates = CookieController.userPreviousLocationCoordinates(controller.coordinates,controller.radius)
+    var oldCoordinates = CookieController.userPreviousLocationCoordinates(controller.coordinates,controller.radius)
     for (var i = 0; i < oldCoordinates.length; i++) {
       controller.geo.getPointsNearLoc(oldCoordinates[i],controller.radius, function(array) {
-        controller.addCookiePhotos(array)
-        controller.appendCookiePhoto(array)
+        controller.addPhotosFromCookieLocations(array)
+        controller.appendPhotoFromCookieLocation(array)
       })
     }
-  }//,
-  // setupCookieListener: function(controller) {
-  //   var oldCoordinates = CookieController.userPreviousLocationCoordinates(controller.coordinates,controller.radius)
-  //   for (var i = 0; i < oldCoordinates.length; i++) {
-  //     controller.geo.getPointsNearLoc(oldCoordinates[i],controller.radius, function(array){})
-  //   }
-  // }
+  }
 }

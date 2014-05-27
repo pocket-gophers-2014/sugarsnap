@@ -1,10 +1,9 @@
-function FirebaseController(view, geo, coordinates) {
+function FirebaseController(view, geo, userCoordinates) {
   this.view = view;
   this.geo = geo;
-  this.coordinates = coordinates;
+  this.coordinates = userCoordinates;
   this.radius = 1;
   this.scrollPhotos = []
-
 }
 
 FirebaseController.prototype = {
@@ -27,7 +26,7 @@ FirebaseController.prototype = {
   },
   updatePhotoStream: function(array) {
     var photoToAppend = PhotoHandler.getLatestPhoto(array)
-    this.view.removePendingLoadAnimation()
+    SpinnerModule.removeSpinnerAnimation()
     this.view.prependNewPhoto(photoToAppend.photoUrl)
   },
   appendPhotosToFeed: function(photos) {
@@ -35,13 +34,13 @@ FirebaseController.prototype = {
       this.view.appendPhoto(photos[i])
     }
   },
-  addCookiePhotos: function(array) {
+  addPhotosFromCookieLocations: function(array) {
     if (array.length > 0) {
       var cookiePhotos = PhotoHandler.getCookiePhotos(array)
       this.scrollPhotos = this.scrollPhotos.concat(cookiePhotos)
     }
   },
-  appendCookiePhoto: function(array) {
+  appendPhotoFromCookieLocation: function(array) {
     if (array.length > 0) {
       var photoToAppend = PhotoHandler.getLatestPhoto(array)
       this.scrollPhotos.push(photoToAppend)
