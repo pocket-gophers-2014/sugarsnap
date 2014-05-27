@@ -20,6 +20,7 @@ CameraController.prototype = {
         var url = JSON.parse(response.target.responseText)
         FirebaseCommunicator.sendImageToFirebase(url["url"])
       } else if (xhr.status === 422 || xhr.status === 500){
+        SpinnerModule.removeSpinnerAnimation()
         var errorHolder = JSON.parse(response.target.responseText)
         alert(errorHolder["errors"])
       }
