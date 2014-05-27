@@ -1,4 +1,4 @@
-$shittygreen: #85E085;
+$snappygreen: #85E085;
 .hidden { display: none; }
 
 body {
@@ -26,7 +26,7 @@ header {
 
 #header {
   margin: 0px;
-  background: #85E085;
+  background: $snappygreen;
   height: 50px;
   padding: none;
   padding-bottom: 5px;
@@ -112,7 +112,7 @@ footer {
   bottom: 0px;
   height: 50px;
   width: 100%;
-  background: #85E085;
+  background: $snappygreen;
   margin: 0;
   padding: 0;
   text-align: center;
