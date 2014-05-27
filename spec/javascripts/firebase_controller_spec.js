@@ -110,21 +110,21 @@ describe('FirebaseController', function() {
   describe('updatePhotoStream', function() {
     it('calls PhotoHandler.updatePhotoStream', function() {
       spyOn(PhotoHandler, 'getLatestPhoto').and.returnValue(testPhotoObject)
-      spyOn(testFirebaseController.view, 'removePendingLoadAnimation')
+      spyOn(SpinnerModule, 'removeSpinnerAnimation')
       spyOn(testFirebaseController.view, 'prependNewPhoto')
       testFirebaseController.updatePhotoStream()
       expect(PhotoHandler.getLatestPhoto).toHaveBeenCalled()
     });
-    it('calls the view removePendingLoadAnimation function', function() {
+    it('calls the view removeSpinnerAnimation function', function() {
       spyOn(PhotoHandler, 'getLatestPhoto').and.returnValue(testPhotoObject)
-      spyOn(testFirebaseController.view, 'removePendingLoadAnimation')
+      spyOn(SpinnerModule, 'removeSpinnerAnimation')
       spyOn(testFirebaseController.view, 'prependNewPhoto')
       testFirebaseController.updatePhotoStream()
-      expect(testFirebaseController.view.removePendingLoadAnimation).toHaveBeenCalled()
+      expect(SpinnerModule.removeSpinnerAnimation).toHaveBeenCalled()
     });
     it('calls the view prependNewPhoto function', function() {
       spyOn(PhotoHandler, 'getLatestPhoto').and.returnValue(testPhotoObject)
-      spyOn(testFirebaseController.view, 'removePendingLoadAnimation')
+      spyOn(SpinnerModule, 'removeSpinnerAnimation')
       spyOn(testFirebaseController.view, 'prependNewPhoto')
       testFirebaseController.updatePhotoStream()
       expect(testFirebaseController.view.prependNewPhoto).toHaveBeenCalled()
