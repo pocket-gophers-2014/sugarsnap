@@ -9,7 +9,7 @@ var SpinnerModule = (function() {
       var $imageClone = $(hiddenSelector).clone()
       $imageClone.removeClass('hidden')
       $imageClone.attr('id', 'waiting')
-      $template.prepend(imageClone.attr('src', 'spinner.gif'))
+      $template.prepend($imageClone.attr('src', 'spinner.gif'))
     },
     removeSpinnerAnimation: function() {
       if ($(waitingSelector)) {
