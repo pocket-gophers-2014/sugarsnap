@@ -1,15 +1,9 @@
 $(document).ready(function() {
-  new CameraController(new CameraView()).bindCameraListener()
-  // global var
-  var gCoordinates = []
+
+  gCoordinates = []
   LocationUpdater.getCoordinates()
-  var header = document.getElementById("header");
-  header.addEventListener('click', toggleSubheaderDisplay, false);
+  new CameraController(new CameraView()).bindCameraListener()
+  new HeaderController(new HeaderView()).bindHeaderListener()
 })
 
-function toggleSubheaderDisplay(evt) {
-  var header = document.getElementById("header");
-  console.log('toggle the header');
-  $('#subheader').toggle();
-}
 
