@@ -15,6 +15,7 @@ var FirebaseCommunicator = {
     var geo = FirebaseConnection.getGeo()
     var timeStamp = Date.now()
     //uses global var (will break function if called instantly)
+    // m..hm...... global var causing Ragnarok
     var userPosition = gCoordinates
     photoObject = { photoUrl: url, createdAt: timeStamp }
     geo.insertByLoc(userPosition, photoObject)

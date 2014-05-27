@@ -17,6 +17,8 @@ describe PhotosController do
       expect(Photo.count).to eq(1)
     end
 
+    # Seems like you should be stubbing this, no?  It seems like you're really
+    # sending this through S2.
     it 'should return the correct public_url' do
       public_url = "http://s3-us-west-1.amazonaws.com/sugarsnapper/photos/images/000/000/001/medium/awesome.jpg"
       post :create, params

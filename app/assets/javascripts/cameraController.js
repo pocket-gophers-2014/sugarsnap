@@ -11,8 +11,8 @@ CameraController.prototype = {
     event.preventDefault();
     var token = TokenScraper.token();
     var formData = FormDataPreparer.prepare(event)
-    SpinnerModule.renderSpinnerAnimation();
     var xhr = new XMLHttpRequest()
+    SpinnerModule.renderSpinnerAnimation();
     xhr.open(event.target.method, event.target.action, true);
     xhr.setRequestHeader("X-CSRF-Token", token);
     xhr.onload = function(response) {

@@ -23,6 +23,8 @@ class Photo < ActiveRecord::Base
     "http://s3-us-west-1.amazonaws.com/#{Photo.aws_bucket}#{path}"
   end
 
+  # is this really something every photo knows?  Its AWS bucket?  Seems like
+  # that should be in ApplicationController ?
   def self.aws_bucket
     ENV['AWSBucket']
   end
