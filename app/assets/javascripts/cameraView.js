@@ -4,6 +4,6 @@ function CameraView() {
 
 CameraView.prototype = {
   getFormSelector: function() {
-    return $(this.formSelector)
+    return document.getElementByTagName(this.formSelector)
   }
 }

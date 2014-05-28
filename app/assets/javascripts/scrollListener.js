@@ -1,4 +1,4 @@
-var ScrollListener = (function() {
+var InfiniteScroller = (function() {
   var _informControllerOfScrollPosition = function(controller) {
     $(window).scroll(function() {
       if ($(window).scrollTop() >= ($(document).height() - 400) - $(window).height()) {

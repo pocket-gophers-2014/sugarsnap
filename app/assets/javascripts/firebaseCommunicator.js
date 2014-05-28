@@ -1,31 +1,22 @@
 var FirebaseCommunicator = {
-  getInitialPhotos: function(controller) {
-    controller.geo.getPointsNearLoc(controller.coordinates, controller.radius, function(array) {
-      controller.init(array);
-      FirebaseCommunicator.setupCookieListenerAndAddCookieFeed(controller)
-      controller.initInfiniteScroll(array);
-    })
+  getInitialPhotos: function(firebaseController, photoController) {
+    var geo = firebaseController.geo
+    geo.getPointsNearLoc([firebaseController.latitude, firebaseController.longitude], firebaseController.radius, function(photoArray) {
+        photoController.initializeFeed(photoArray);
+        photoController.initializeInfiniteScroll(photoArray);
+      }
+    )
   },
-  addAutomaticUpdateToUserCoordinates: function(controller) {
-    controller.geo.onPointsNearLoc(controller.coordinates, controller.radius, function(array) {
-      controller.updatePhotoStream(array);
-    })
+  getLivePhotoUpdate: function(firebaseController, photoController) {
+    var geo = firebaseController.geo
+    geo.onPointsNearLoc([firebaseController.latitude, firebaseController.longitude], firebaseController.radius, function(photoArray) { photoController.updatePhotoFeed(photoArray) };
+    )
   },
-  sendImageToFirebase: function(url) {
-    var geo = FirebaseConnection.getGeo()
-    var timeStamp = Date.now()
-    //uses global var (will break function if called instantly)
-    var userPosition = gCoordinates
-    photoObject = { photoUrl: url, createdAt: timeStamp }
+  sendPhotoUrlToFirebase: function(firebaseController, photoUrl) {
+    var geo = firebaseController.geo;
+    var timeStamp = Date.now();
+    var userPosition = [firebaseController.latitude, firebaseController.longitude];
+    photoObject = { photoUrl: photoUrl, createdAt: timeStamp }
     geo.insertByLoc(userPosition, photoObject)
-  },
-  setupCookieListenerAndAddCookieFeed: function(controller) {
-    var oldCoordinates = CookieController.userPreviousLocationCoordinates(controller.coordinates,controller.radius)
-    for (var i = 0; i < oldCoordinates.length; i++) {
-      controller.geo.getPointsNearLoc(oldCoordinates[i],controller.radius, function(array) {
-        controller.addPhotosFromCookieLocations(array)
-        controller.appendPhotoFromCookieLocation(array)
-      })
-    }
   }
 }

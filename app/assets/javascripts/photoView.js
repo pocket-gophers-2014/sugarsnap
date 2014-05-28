@@ -1,16 +1,16 @@
-function FirebaseView() {
-  this.feed = 'feed'
+function PhotoView () {
+  this.feed = 'feed';
   this.photoTemplate = 'img'
 }
 
-FirebaseView.prototype = {
+PhotoView.prototype = {
   appendPhoto: function(photoUrl) {
-    var initialPhoto = this.createPhotoTemplate(photoUrl)
-    this.returnFeedSelector().appendChild(initialPhoto)
+    var initialPhoto = this.createPhotoTemplate(photoUrl);
+    this.returnFeedSelector().appendChild(initialPhoto);
   },
   prependNewPhoto: function(photoUrl) {
     var newPhoto = this.createPhotoTemplate(photoUrl);
-    var photoFeed = this.returnFeedSelector()
+    var photoFeed = this.returnFeedSelector();
     photoFeed.insertBefore(newPhoto, photoFeed.firstChild)
   },
   createPhotoTemplate: function(photoUrl) {
