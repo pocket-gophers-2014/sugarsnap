@@ -9,7 +9,7 @@ var FirebaseCommunicator = {
   },
   getLivePhotoUpdate: function(firebaseController, photoController) {
     var geo = firebaseController.geo
-    geo.onPointsNearLoc([firebaseController.latitude, firebaseController.longitude], firebaseController.radius, function(photoArray) { photoController.updatePhotoFeed(photoArray) };
+    geo.onPointsNearLoc([firebaseController.latitude, firebaseController.longitude], firebaseController.radius, function(photoArray) { photoController.updatePhotoFeed(photoArray) }
     )
   },
   sendPhotoUrlToFirebase: function(firebaseController, photoUrl) {

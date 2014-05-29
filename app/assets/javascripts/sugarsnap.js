@@ -1,19 +1,18 @@
 SugarSnap = {
   initialize: function() {
-    navigator.geolocation.getCurrentPostion(this.initializeFeed, this.errors)
+    navigator.geolocation.getCurrentPosition(this.getCoordinatesSuccess, this.getCoordinatesFailure)
   },
   getCoordinatesSuccess: function(position) {
-    // SpinnerModule.renderSpinnerAnimation();
+    SpinnerModule.renderSpinnerAnimation();
     var firebaseController = new FirebaseController(position, FirebaseConnection.getGeo())
-    // var photoController = new PhotoController(new PhotoView())
-    // firebaseController.subscribeListenerForInitialPhotos(photoController)
-    // firebaseController.subscribeListenerForLivePhotoUpdates(photoController)
-    //infinitescroll
-    // new CameraController(new CameraView()).bindCameraListener.(firebaseController)
-    // new HeaderController(new HeaderView()).bindHeaderListener()
-    // InfiniteScroller.checkScrollThreshold( firebaseController )
-    // CookieController.manageCookies( gCoordinates, firebaseController.radius )
-    // SubmissionModule.listenForFileUpload()
+    var photoController = new PhotoController(new PhotoView())
+    firebaseController.subscribeListenerForInitialPhotos(photoController)
+    firebaseController.subscribeListenerForLivePhotoUpdates(photoController)
+    new CameraController(new CameraView()).bindCameraListener(firebaseController)
+    new HeaderController(new HeaderView()).bindHeaderListener()
+    InfiniteScroller.checkScrollThreshold( photoController )
+    CookieController.manageCookies( [firebaseController.latitude, firebaseController.longitude], firebaseController.radius )
+    SubmissionModule.listenForFileUpload()
   },
   getCoordinateFailure: function() {
     alert("We're sorry,we couldn't find you! We'll keep searching.")

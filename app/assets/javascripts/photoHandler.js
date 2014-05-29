@@ -1,5 +1,5 @@
 PhotoHandler = {
-  initialPhotosQuantity: function() {
+  photoLoadQuantity: function() {
     return 10
   },
   extractPhotoUrls: function(photos) {
@@ -10,11 +10,11 @@ PhotoHandler = {
   },
   getFirstPhotos: function(photos) {
     var sortedPhotos = this.sortByTimeCreated(photos)
-    return sortedPhotos.slice(1,this.initialPhotosQuantity)
+    return sortedPhotos.slice(1,this.photoLoadQuantity())
   },
   getCachedPhotos: function(photos) {
     var sortedPhotos = this.sortByTimeCreated(photos)
-    return sortedPhotos.slice(this.initialPhotosQuantity+1, sortedPhotos.length)
+    return sortedPhotos.slice(this.photoLoadQuantity()+1, sortedPhotos.length)
   },
   sortByTimeCreated: function(photos) {
     var sortedPhotos = photos.sort(function(a, b) {
@@ -32,7 +32,10 @@ PhotoHandler = {
     return sortedPhotos.slice(1,sortedPhotos.length)
   },
   getNextSetOfScrollPhotos: function(photos) {
-    var sortedPhotos = this.sortByTimeCreated(photos)
-    return sortedPhotos.splice(0,this.initialPhotosQuantity)
-  }
+    return photos.splice(0,this.photoLoadQuantity())
+  }//,
+  // getCookiePhotos: function(photos) {
+  //   var sortedPhotos = this.sortByTimeCreated(photos)
+  //   return sortedPhotos.slice(1,sortedPhotos.length)
+  // }
 }

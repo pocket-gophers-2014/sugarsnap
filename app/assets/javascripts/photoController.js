@@ -25,5 +25,22 @@ PhotoController.prototype = {
   updatePhotoFeed: function(photoArray) {
     var photoUrlToPrepend = PhotoHandler.getLatestPhoto(photoArray);
     this.view.prependNewPhoto(photoUrlToPrepend);
-  }
+  },
+  appendExtraPhotosOnScrollEvent: function() {
+    var extraScrollPhotos = PhotoHandler.getNextSetOfScrollPhotos(this.scrollPhotos);
+    PhotoHandler.extractPhotoUrls(extraScrollPhotos)
+    this.appendPhotosToFeed(extraScrollPhotos)
+  }//,
+  // addPhotosFromCookieLocations: function(array) {
+  //   if (array.length > 0) {
+  //     var cookiePhotos = PhotoHandler.getCookiePhotos(array)
+  //     this.scrollPhotos = this.scrollPhotos.concat(cookiePhotos)
+  //   }
+  // },
+  // appendPhotoFromCookieLocation: function(array) {
+  //   if (array.length > 0) {
+  //     var photoToAppend = PhotoHandler.getLatestPhoto(array)
+  //     this.scrollPhotos.push(photoToAppend)
+  //   }
+  // }
 }

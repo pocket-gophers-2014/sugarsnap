@@ -3,11 +3,12 @@ function CameraController(view) {
 }
 
 CameraController.prototype = {
-  bindCameraListener: function() {
+  bindCameraListener: function(firebaseController) {
     var photoForm = this.view.getFormSelector()
-    photoForm.on("submit", this.sendPhotoToServer.call(this, firebaseController))
+    photoForm.addEventListener("submit", this.sendPhotoToServer, false)
   },
   sendPhotoToServer: function(event) {
+    debugger
     event.preventDefault();
     SpinnerModule.renderSpinnerAnimation();
     var token = TokenScraper.token();
