@@ -14,7 +14,7 @@ SugarSnap = {
     CookieController.manageCookies( [firebaseController.latitude, firebaseController.longitude], firebaseController.radius )
     SubmissionModule.listenForFileUpload()
   },
-  getCoordinateFailure: function() {
+  getCoordinatesFailure: function() {
     alert("We're sorry,we couldn't find you! We'll keep searching.")
     this.initialize()
   }
