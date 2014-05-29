@@ -27,15 +27,7 @@ PhotoHandler = {
     var sortedPhotoUrls =  this.extractPhotoUrls(sortedPhotos);
     return sortedPhotoUrls.shift()
   },
-  getCookiePhotos: function(photos) {
-    var sortedPhotos = this.sortByTimeCreated(photos)
-    return sortedPhotos.slice(1,sortedPhotos.length)
-  },
   getNextSetOfScrollPhotos: function(photos) {
     return photos.splice(0,this.photoLoadQuantity())
-  }//,
-  // getCookiePhotos: function(photos) {
-  //   var sortedPhotos = this.sortByTimeCreated(photos)
-  //   return sortedPhotos.slice(1,sortedPhotos.length)
-  // }
+  }
 }
