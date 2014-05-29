@@ -1,6 +1,6 @@
 SugarSnap = {
   initialize: function() {
-    navigator.geolocation.getCurrentPosition(this.getCoordinatesSuccess, this.getCoordinatesFailure)
+    navigator.geolocation.getCurrentPosition(this.getCoordinatesSuccess, this.getCoordinatesFailure.bind(this))
   },
   getCoordinatesSuccess: function(position) {
     SpinnerModule.renderSpinnerAnimation();

@@ -24,6 +24,7 @@ PhotoController.prototype = {
   },
   updatePhotoFeed: function(photoArray) {
     var photoUrlToPrepend = PhotoHandler.getLatestPhoto(photoArray);
+    SpinnerModule.removeSpinnerAnimation()
     this.view.prependNewPhoto(photoUrlToPrepend);
   },
   appendExtraPhotosOnScrollEvent: function() {

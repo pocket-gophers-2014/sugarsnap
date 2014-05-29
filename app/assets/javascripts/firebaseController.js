@@ -13,6 +13,6 @@ FirebaseController.prototype = {
     FirebaseCommunicator.getLivePhotoUpdate(this, photoController);
   },
   sendLivePhotoUpdateToFirebase: function(photoUrl) {
-    FirebaseCommunicator.sendImageToFirebase(this, photoUrl);
+    FirebaseCommunicator.sendPhotoUrlToFirebase(this, photoUrl);
   }
 }
