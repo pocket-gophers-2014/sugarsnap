@@ -1,49 +1,18 @@
-function FirebaseController(view, geo, userCoordinates) {
-  this.view = view;
-  this.geo = geo;
-  this.coordinates = userCoordinates;
+function FirebaseController(position, firebaseConnectionGeo) {
+  this.geo = firebaseConnectionGeo;
   this.radius = 1;
-  this.scrollPhotos = []
+  this.latitude = position.coords.latitude;
+  this.longitude = position.coords.longitude;
 }
 
 FirebaseController.prototype = {
-  init: function(array) {
-    var photos = this.extractInitialPhotos(array)
-    this.appendPhotosToFeed(photos)
+  subscribeListenerForInitialPhotos: function(photoController) {
+    FirebaseCommunicator.getInitialPhotos(this, photoController)
   },
-  initInfiniteScroll: function(array) {
-    this.scrollPhotos = PhotoHandler.getCachedPhotos(array)
+  subscribeListenerForLivePhotoUpdates: function(photoController) {
+    FirebaseCommunicator.getLivePhotoUpdate(this, photoController);
   },
-  extractInitialPhotos: function(array) {
-    var initialPhotos = PhotoHandler.getFirstTenPhotos(array)
-    var photoUrls = PhotoHandler.extractPhotoUrls(initialPhotos)
-    return photoUrls;
-  },
-  appendExtraPhotosOnScrollEvent: function() {
-    var extraScrollPhotos = PhotoHandler.getNextSetOfScrollPhotos(this.scrollPhotos)
-    PhotoHandler.extractPhotoUrls(extraScrollPhotos)
-    this.appendPhotosToFeed(extraScrollPhotos)
-  },
-  updatePhotoStream: function(array) {
-    var photoToAppend = PhotoHandler.getLatestPhoto(array)
-    SpinnerModule.removeSpinnerAnimation()
-    this.view.prependNewPhoto(photoToAppend.photoUrl)
-  },
-  appendPhotosToFeed: function(photos) {
-    for (var i = 0; i < photos.length; i++) {
-      this.view.appendPhoto(photos[i])
-    }
-  },
-  addPhotosFromCookieLocations: function(array) {
-    if (array.length > 0) {
-      var cookiePhotos = PhotoHandler.getCookiePhotos(array)
-      this.scrollPhotos = this.scrollPhotos.concat(cookiePhotos)
-    }
-  },
-  appendPhotoFromCookieLocation: function(array) {
-    if (array.length > 0) {
-      var photoToAppend = PhotoHandler.getLatestPhoto(array)
-      this.scrollPhotos.push(photoToAppend)
-    }
+  sendLivePhotoUpdateToFirebase: function(photoUrl) {
+    FirebaseCommunicator.sendPhotoUrlToFirebase(this, photoUrl);
   }
 }
