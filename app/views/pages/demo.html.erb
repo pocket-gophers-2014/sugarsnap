@@ -1,27 +1,27 @@
-<script id='demo' type="text/javascript">var demoPosition = {'coords': {'latitude': 37.7844932, 'longitude': -122.39699979999999}}</script>
+<div id='demo'>
+  <header>
+    <div id="header">
+      <h1>sugarsnap.</h1>
+    </div>
+    <div id="subheader">
+      <p>Share photos and see what is around you with Sugarsnap. Track photos in places you've visited automatically</p>
+    </div>
+  </header>
 
-<header>
-  <div id="header">
-    <h1>sugarsnap.</h1>
+  <div class='feed-container'>
+    <div id='feed'>
+      <img class="hidden">
+    </div>
   </div>
-  <div id="subheader">
-    <p>Share photos and see what is around you with Sugarsnap. Track photos in places you've visited automatically</p>
-  </div>
-</header>
 
-<div class='feed-container'>
-  <div id='feed'>
-    <img class="hidden">
-  </div>
+  <footer>
+    <div class='form-container'>
+      <%= form_for @photo do |f| %>
+      <%= f.file_field :image, accept: 'image/*', id: "photo_image", capture: 'camera' %>
+      <img src='icon-camera-128.png' id='camera-icon'>
+      <%= f.submit "Submit", id: "submit_photo" %>
+      <img src='cloud_arrow_up.png' id='cloud_icon'>
+    <% end %>
+    </div>
+  </footer>
 </div>
-
-<footer>
-  <div class='form-container'>
-    <%= form_for @photo do |f| %>
-    <%= f.file_field :image, accept: 'image/*', id: "photo_image", capture: 'camera' %>
-    <img src='icon-camera-128.png' id='camera-icon'>
-    <%= f.submit "Submit", id: "submit_photo" %>
-    <img src='cloud_arrow_up.png' id='cloud_icon'>
-  <% end %>
-  </div>
-</footer>

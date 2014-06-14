@@ -1,11 +1,7 @@
 
 SugarSnap = {
   initialize: function() {
-    if (typeof demoPosition !== 'undefined') {
-      this.getCoordinatesSuccess(demoPosition)
-    } else {
     navigator.geolocation.getCurrentPosition(this.getCoordinatesSuccess, this.getCoordinatesFailure.bind(this))
-    }
   },
   getCoordinatesSuccess: function(position) {
     SpinnerModule.renderSpinnerAnimation();
