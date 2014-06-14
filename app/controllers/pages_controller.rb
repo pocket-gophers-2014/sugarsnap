@@ -8,4 +8,8 @@ class PagesController < ApplicationController
     @photo = Photo.new
   end
 
+  def sidescroll
+    @photo = Photo.new
+  end
+
 end

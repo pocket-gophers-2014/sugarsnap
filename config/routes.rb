@@ -7,5 +7,6 @@ Sugarsnap::Application.routes.draw do
   resources :photos, only: [:new, :create]
 
   get '/demo', to:'pages#demo'
+  get '/sidescroll', to:'pages#sidescroll'
 
 end
