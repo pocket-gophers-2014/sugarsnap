@@ -4,10 +4,10 @@ $('#sugarsnap').ready(function() {
 
 $('#demo').ready(function() {
   var demoPosition = {'coords': {'latitude': 37.7844932, 'longitude': -122.39699979999999}}
-  SugarSnap.getCoordinatesSuccess(demoPosition)
+  SugarSnap.getCoordinatesSuccess(demoPosition, InfiniteScroller)
 })
 
 $('#demo-sidescroll').ready(function() {
   var demoPosition = {'coords': {'latitude': 37.7844932, 'longitude': -122.39699979999999}}
-  SugarSnap.getCoordinatesSuccess(demoPosition)
+  SugarSnap.getCoordinatesSuccess(demoPosition, SideScroller)
 })
